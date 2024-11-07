@@ -1,7 +1,6 @@
 from collections import defaultdict
 import dataclasses as dc
-from typing import Any, Dict, Iterator, List, Tuple
-from uuid import UUID as Uuid
+from typing import Dict, Iterator, List, Tuple
 
 
 from ._taleSpireAsset import TaleSpireAsset
