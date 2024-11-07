@@ -44,7 +44,7 @@ jobs:
       with:
         issue-number: ${{ github.event.pull_request.number }}
         token: ${{ secrets.GITHUB_TOKEN }}
-        comment-author: github-actions
+        comment-author: "github-actions[bot]"
         body-includes: Patch notes for this PR
 
     - name: Comment On PR
