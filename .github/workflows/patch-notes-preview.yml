@@ -1,0 +1,58 @@
+name: Patch Notes Preview
+
+on:
+  pull_request:
+    branches:
+    - main
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  patch-notes-preview:
+    name: Patch Notes Preview
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16
+
+    - name: Node Dependencies
+      run: |
+        npm install \
+          conventional-changelog-conventionalcommits@5.0.0 \
+          @semantic-release/changelog@6.0.1 \
+          @semantic-release/commit-analyzer@9.0.2 \
+          @semantic-release/github@8.0.5 \
+          @semantic-release/release-notes-generator@10.0.3
+
+    - name: Patch Notes
+      id: patch-notes
+      uses: guilhermetod/semantic-release-notes-preview@v1.0.0
+
+    - name: Find PR Comment
+      uses: peter-evans/find-comment@v2
+      id: pr-comment
+      with:
+        issue-number: ${{ github.event.pull_request.number }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+        comment-author: github-actions
+        body-includes: Patch notes for this PR
+
+    - name: Comment On PR
+      uses: peter-evans/create-or-update-comment@v2
+      with:
+        edit-mode: replace
+        comment-id: ${{ steps.pr-comment.outputs.comment-id }}
+        issue-number: ${{ github.event.pull_request.number }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+        body: |
+          Patch notes for this PR:
+
+          ${{ steps.patch-notes.outputs.releaseNotes }}
