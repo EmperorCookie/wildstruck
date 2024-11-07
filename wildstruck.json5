@@ -1,0 +1,3818 @@
+{
+    "biomeMaps": [
+        {
+            "name": "aesthetic",
+            "colors": {
+                "000000": "void", // Done
+                "FFFFFF": "plainsWinter", // Done
+                "608080": "tundra", // Done
+                "008060": "forestTaiga", // Done
+                "60C0A0": "forestTaigaWinter",
+                "108040": "forestMixed", // Done
+                "A08070": "forestMixedFall",
+                "80A080": "forestMixedWinter",
+                "208020": "forest", // Done
+                "607020": "forestFall",
+                "50A050": "forestWinter",
+                "105010": "forestDense", // Done
+                "608020": "swamp",
+                "60C060": "plains", // Done
+                "C0C060": "desert", // Done
+                "E0E080": "sand", // Done
+                "FFFF80": "beach", // Done
+                "608060": "shrubland",
+                "A0C060": "savanna",
+                "106010": "forestJungle", // Done
+                "906050": "crackedDirt", // Done
+                "808080": "cliff",
+                "C0C0C0": "cliffWinter",
+                "4080A0": "waterMud",
+                "80D0C0": "waterSand",
+                "4090C0": "waterStone",
+            },
+        },
+        {
+            "name": "temperatureHumidity",
+            "colors": {
+                "000000": "tundra",
+                "000055": "tundra",
+                "0000AA": "plainsSnow",
+                "0000FF": "plainsSnow",
+                "550000": "plains",
+                "550055": "forestTaiga",
+                "5500AA": "forestTaiga",
+                "5500FF": "forestTaigaSnow",
+                "AA0000": "plains",
+                "AA0055": "shrubland",
+                "AA00AA": "forestMixed",
+                "AA00FF": "swamp",
+                "FF0000": "desert",
+                "FF0055": "savanna",
+                "FF00AA": "forest",
+                "FF00FF": "forestJungle",
+                "FFFF00": "beach",
+                "906050": "crackedDirt",
+                "808080": "cliff",
+                "FFFFFF": "cliffSnow",
+                "105010": "forestDense",
+                "608060": "forestMixedSnow",
+                "0080FF": "waterMud",
+                "00FFFF": "waterSand",
+                "608090": "waterStone",
+            },
+        },
+    ],
+    "biomes": [
+        {
+            "name": "void",
+            "tiles": {},
+        },
+        {
+            "name": "crackedDirt",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "crackedDirt",
+                            },
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "sand",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "sand",
+                            },
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "plains",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "grass",
+                            },
+                            "clutter": [
+                                {
+                                    "coverage": 0.7,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "grass",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "smallStone",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.05,
+                                                "value": {
+                                                    "name": "pebbles",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "plainsWinter",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "snow",
+                            },
+                            "clutter": [
+                                {
+                                    "coverage": 1,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "snow",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "desert",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "sandRocky",
+                            },
+                            "clutter": [
+                                {
+                                    "coverage": 0.2,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "skullDesert",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "bonesDesert",
+                                                },
+                                            },
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "bushDead",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.2,
+                                                "value": {
+                                                    "name": "treeDead",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.2,
+                                                "value": {
+                                                    "name": "rockDesert",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "pebbles",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    "coverage": 0.1,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "cactus",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.2,
+                                                "value": {
+                                                    "name": "cactusBulb",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "beach",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "sand",
+                            },
+                            "clutter": [
+                                {
+                                    "coverage": 0.2,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "clam",
+                                                },
+                                            },
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "seashell",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "clamsSeashells",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.2,
+                                                "value": {
+                                                    "name": "vine",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.2,
+                                                "value": {
+                                                    "name": "smallStone",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "pebbles",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "forestJungle",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "jungle",
+                            },
+                            "clutter": [
+                                {
+                                    "coverage": 1,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "plantLeaf",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.75,
+                                                "value": {
+                                                    "name": "fern",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "flowerJungle",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.25,
+                                                "value": {
+                                                    "name": "mushroomBrown",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "mossRock",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.05,
+                                                "value": {
+                                                    "name": "mossLog",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    "coverage": 0.7,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "vine",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    "coverage": 0.25,
+                                    "randomMethod": "jitter",
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "treeJungle",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "forestDense",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "grass",
+                            },
+                            "clutter": [
+                                {
+                                    "coverage": 1,
+                                    "trueRandom": true,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "plantLeaf",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.5,
+                                                "value": {
+                                                    "name": "plantLeafBig",
+                                                },
+                                            },
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "fern",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.25,
+                                                "value": {
+                                                    "name": "mushroomBrown",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.25,
+                                                "value": {
+                                                    "name": "mushroomForest",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "mossRock",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    "coverage": 0.75,
+                                    "randomMethod": "true",
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "tree",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "treeDead",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "forest",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "grass",
+                            },
+                            "clutter": [
+                                {
+                                    "coverage": 0.75,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "plantLeaf",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.5,
+                                                "value": {
+                                                    "name": "plantLeafBig",
+                                                },
+                                            },
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "fern",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.25,
+                                                "value": {
+                                                    "name": "mushroomBrown",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.25,
+                                                "value": {
+                                                    "name": "mushroomForest",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "mossRock",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    "coverage": 0.33,
+                                    "randomMethod": "jitter",
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "tree",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.05,
+                                                "value": {
+                                                    "name": "treeDead",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "forestTaiga",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "grass",
+                            },
+                            "clutter": [
+                                {
+                                    "coverage": 1,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "fern",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    "coverage": 0.5,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "pineCones",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.5,
+                                                "value": {
+                                                    "name": "mushroomBrown",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.5,
+                                                "value": {
+                                                    "name": "vine",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    "coverage": 0.33,
+                                    "randomMethod": "jitter",
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "treePine",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "forestMixed",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "grass",
+                            },
+                            "clutter": [
+                                {
+                                    "coverage": 1,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "fern",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    "coverage": 0.5,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "pineCones",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.5,
+                                                "value": {
+                                                    "name": "mushroomBrown",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.5,
+                                                "value": {
+                                                    "name": "vine",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    "coverage": 0.33,
+                                    "randomMethod": "jitter",
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "treePine",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.66,
+                                                "value": {
+                                                    "name": "tree",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.33,
+                                                "value": {
+                                                    "name": "treeDead",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "waterMud",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "mud",
+                            },
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "waterStone",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "stone",
+                            },
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "cliff",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "stone",
+                            },
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "tundra",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "stone",
+                            },
+                            "clutter": [
+                                {
+                                    "coverage": 0.2,
+                                    "randomMethod": "jitter",
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "snow",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    "coverage": 1,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "moss",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.2,
+                                                "value": {
+                                                    "name": "dirt",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.005,
+                                                "value": {
+                                                    "name": "rockLow",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+    ],
+    "tiles": [
+        {
+            "name": "jungle",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "bdf12fe7-8fa6-4474-878e-7e5847a34407",
+                            "size": 1,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "dc860f1a-ebeb-491d-a75d-8b87ce51a808",
+                            "size": 1,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "2a50b735-3621-4880-9e88-11a6fff656c2",
+                            "size": 2,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "5463a50a-4b72-48f4-af5e-ebe46b60e260",
+                            "size": 2,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                    {
+                        "weight": 0.5,
+                        "value": {
+                            "uuid": "231d8abb-9fa5-4e49-92e1-bd38f0bcf9b5",
+                            "size": 2,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "crackedDirt",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "853c67c9-178e-49b2-9b76-f7f80c0060a3",
+                            "size": 1,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "f4fbf14e-df4d-4442-9dc6-c230e83ca495",
+                            "size": 2,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "mud",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "503f0799-b652-4d81-b202-d4473caecee4",
+                            "size": 1,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "126e3c30-8188-4bd0-9288-493ea00679c3",
+                            "size": 2,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "grass",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "ad6c985c-8d8b-44f2-abd5-edc9de568d30",
+                            "size": 1,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "01c3a210-94fb-449f-8c47-993eda3e7126",
+                            "size": 2,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "3911d10d-142b-4f33-9fea-5d3a10c53781",
+                            "size": 2,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "snow",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "9b13871f-e338-4525-b9be-37f8870509e8",
+                            "size": 1,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "4b31606e-f19b-4923-8aea-306826b7e13b",
+                            "size": 2,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "sand",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "3723541f-4c2d-46df-9ed4-5dbafff1146f",
+                            "size": 1,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "4bfbdf17-8c93-48b2-adf8-f2ab39135e0b",
+                            "size": 2,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "sandRocky",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "3723541f-4c2d-46df-9ed4-5dbafff1146f",
+                            "size": 1,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "4bfbdf17-8c93-48b2-adf8-f2ab39135e0b",
+                            "size": 2,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                    {
+                        "weight": 0.5,
+                        "value": {
+                            "uuid": "516b9eb3-97c6-4f5d-b54e-d9ead24e090d",
+                            "size": 2,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "stone",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "ce6a2235-664f-43e8-a744-d5743623701d",
+                            "size": 1,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "ea5589dc-507a-4e0d-bf48-b097c8318a38",
+                            "size": 1,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "uuid": "b83392b1-8833-43c9-a97f-2ac3df659e66",
+                            "size": 2,
+                            "thickness": 0.5,
+                            "angleSnap": 90,
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                        },
+                    },
+                ],
+            },
+        },
+    ],
+    "props": [
+        {
+            "name": "plantLeaf",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "4de18886-e851-41db-a907-42bef532f1f5",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "46ad1cbe-0854-4a36-a238-adad7b408ceb",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "4de18886-e851-41db-a907-42bef532f1f5",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "plantLeafBig",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "9634779e-6d8f-4101-b552-af178d551b5f",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "pineCones",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "2b7c37c4-8dff-4095-873e-592031892dec",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "fern",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "6b9e66b5-2b8c-4ccf-a4e0-53acb0d8a273",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.15,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "e7ad17da-7bd9-47d1-be33-46b0c1bc637f",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.15,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "flowerJungle",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "c04bb850-c0fb-4621-9980-53cb3935f72f",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.15,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "grass",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "6b9e66b5-2b8c-4ccf-a4e0-53acb0d8a273",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": -0.25,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "e7ad17da-7bd9-47d1-be33-46b0c1bc637f",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": -0.25,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "snow",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "9c0c91cc-3445-43e4-8f5c-6c96b29a7e3d",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": -0.45,
+                                                    "zMax": -0.45,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "snowSmall",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "18dae9f1-8935-440d-950c-e6e35eb679b6",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.1,
+                                                    "xMax": 0.1,
+                                                    "yMin": -0.1,
+                                                    "yMax": 0.1,
+                                                    "zMin": -0.45,
+                                                    "zMax": -0.35,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "dirt",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "18a14b3e-1713-4453-869d-4c41abd353e7",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.2,
+                                                    "zMax": -0.2,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "rockLow",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "c4bb44f6-ecff-444d-a196-49eaa76f4aa7",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -2.4,
+                                                    "zMax": -2.2,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "3f5088fa-09eb-403c-a395-a131406f046f",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -2,
+                                                    "zMax": -1.8,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "899deb17-89db-4c21-96a5-3bc2ba603d68",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -1.8,
+                                                    "zMax": -1.6,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "pebbles",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "6ba81f8e-9a9c-4745-990f-2cb27bb29cfc",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": 0,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "clam",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "ecb4cd7d-f59f-4763-b930-64922a77ad82",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "seashell",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "152ef8ef-5575-43e8-b1e6-fc02943c41d9",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "clamsSeashells",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "39c41cb8-bf5a-4b7b-8268-09de48bcef92",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.15,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "smallStone",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "923bc5e3-a845-403f-93dd-035dbd276279",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "vine",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "f32d3808-8956-4123-b359-11d68f972fc0",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": 0,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "2f38f8c4-796a-4be8-a507-ebf761baa4a6",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": 0,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "mushroomBrown",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "0424e451-fd2b-428f-8daf-f01d3ccb2d35",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "3dab9ecb-f25d-43ed-aec1-719d3e5a8928",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "e983e4df-b10c-44ce-9193-6e944b124e00",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "mushroomRed",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "603f6c03-950c-4e47-9c11-8c4b99592d7b",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "d33779cc-60bb-4454-96e4-eedab20b9c51",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "mushroomForest",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "70b365de-4c29-4b1c-8e05-b48a8b3bd6fa",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 0.5,
+                                            "value": {
+                                                "uuid": "6f1904bf-6a03-4c3a-a710-2722d23d6397",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "mushroomBlue",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "713a3242-e487-416c-b0e7-fcbcc9a43bc4",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 0.5,
+                                            "value": {
+                                                "uuid": "912dcc08-4b39-423e-b128-5db0d1697765",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "mushroomMixed",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "67fe3119-d1aa-4bd7-98ca-bafad8f553da",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 0.5,
+                                            "value": {
+                                                "uuid": "c5c65fd7-190d-4b9d-8c57-b7f9a2378ee5",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "mossRock",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "2e255c74-6c6a-463d-a2a2-d8d97c327bfe",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "moss",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "6665514a-cf77-4cab-ad3c-457a924a68d9",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.75,
+                                                    "zMax": -0.7,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "mossLog",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "3ef32c7a-ddab-41c1-aac4-4b59abad193e",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "skullDesert",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "587da238-dda5-4fa1-b816-b41ac4dfe098",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "bonesDesert",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "5d773e2c-ca2f-4c44-88d0-f9b4a7afaf5a",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "b6652d9a-09ac-4dd0-8d6f-32e27da28083",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "rockDesert",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "31a706bc-f39a-427b-b66d-80f7d52e80e2",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.2,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "cactus",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "58c490aa-ccd3-4008-87f3-13935b8a4f1c",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "a40f8e11-9143-45b6-b81d-2d78b81b917d",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "cactusBulb",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "6d5f9341-398c-4ae4-847b-2a59f88bcb4e",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "d2bb65f1-2aab-46a1-b37c-def32a0ee116",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 0.25,
+                                            "value": {
+                                                "uuid": "d1376c81-4b7e-4fe8-b4a1-20b3379caed0",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.1,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "bushDead",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "5b6166d1-98c7-46d3-83e6-040ad6231621",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "c3aa7f07-217c-4f99-81c6-6137637692c7",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "tree",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": -0.25,
+                                "xMax": 0.25,
+                                "yMin": -0.25,
+                                "yMax": 0.25,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "28b95682-24d4-48c1-ae40-c5f02404c9b1",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 0,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "treeDead",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": -0.25,
+                                "xMax": 0.25,
+                                "yMin": -0.25,
+                                "yMax": 0.25,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "afc09e2f-3673-4f91-b8b1-5b9df1537da6",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 0,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "treeDeadTall",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": -0.25,
+                                "xMax": 0.25,
+                                "yMin": -0.25,
+                                "yMax": 0.25,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "ecac8c32-c044-4e97-8d8f-157a83968956",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 0,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "treeDeadWide",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": -0.25,
+                                "xMax": 0.25,
+                                "yMin": -0.25,
+                                "yMax": 0.25,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "431d6291-4b36-4c52-89da-db337a0c6073",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 0,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "treeJungle",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": -0.25,
+                                "xMax": 0.25,
+                                "yMin": -0.25,
+                                "yMax": 0.25,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "6a7b1080-8aa4-4725-a2c7-8c3612f14d81",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 0,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "f73916c8-23b7-4bc7-bd19-869bc701de01",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 2,
+                                                    "zMax": 2,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "c0a9dd10-96b7-46fe-8ff3-9d46184f106f",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 3,
+                                                    "zMax": 3,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "143c029c-34d6-4821-a5d3-76437114b7e0",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 3,
+                                                    "zMax": 3,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "e2ed469f-6bce-4da0-823a-76dc049d8cbf",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 3,
+                                                    "zMax": 3,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "6a7b1080-8aa4-4725-a2c7-8c3612f14d81",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 0,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "f73916c8-23b7-4bc7-bd19-869bc701de01",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 2,
+                                                    "zMax": 2,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "f73916c8-23b7-4bc7-bd19-869bc701de01",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 3,
+                                                    "zMax": 3,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "c0a9dd10-96b7-46fe-8ff3-9d46184f106f",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 4,
+                                                    "zMax": 4,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "143c029c-34d6-4821-a5d3-76437114b7e0",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 4,
+                                                    "zMax": 4,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "e2ed469f-6bce-4da0-823a-76dc049d8cbf",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 4,
+                                                    "zMax": 4,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "6a7b1080-8aa4-4725-a2c7-8c3612f14d81",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 0,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "f73916c8-23b7-4bc7-bd19-869bc701de01",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 2,
+                                                    "zMax": 2,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "f73916c8-23b7-4bc7-bd19-869bc701de01",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 3,
+                                                    "zMax": 3,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "f73916c8-23b7-4bc7-bd19-869bc701de01",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 4,
+                                                    "zMax": 4,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "c0a9dd10-96b7-46fe-8ff3-9d46184f106f",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 5,
+                                                    "zMax": 5,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "143c029c-34d6-4821-a5d3-76437114b7e0",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 5,
+                                                    "zMax": 5,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "e2ed469f-6bce-4da0-823a-76dc049d8cbf",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 5,
+                                                    "zMax": 5,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "treePine",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 0.05,
+                        "value": {
+                            "offset": {
+                                "xMin": -0.25,
+                                "xMax": 0.25,
+                                "yMin": -0.25,
+                                "yMax": 0.25,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "e5a66bdc-37cc-4317-b4c6-a1b88c3392e9",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 0,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "4b4ffc04-4534-4924-84d4-9f3b9e438d81",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 0.5,
+                                                    "zMax": 0.5,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "ee63836f-b03a-428b-8fb9-9848595124a4",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 0.5,
+                                                    "zMax": 0.5,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "3f883945-6d03-4a4b-a1bb-511213c3b9da",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 1.25,
+                                                    "zMax": 1.75,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "weight": 0.05,
+                        "value": {
+                            "offset": {
+                                "xMin": -0.25,
+                                "xMax": 0.25,
+                                "yMin": -0.25,
+                                "yMax": 0.25,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "e5a66bdc-37cc-4317-b4c6-a1b88c3392e9",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 0,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "3f883945-6d03-4a4b-a1bb-511213c3b9da",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 1.25,
+                                                    "zMax": 1.25,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "3f883945-6d03-4a4b-a1bb-511213c3b9da",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 2,
+                                                    "zMax": 2.5,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": -0.25,
+                                "xMax": 0.25,
+                                "yMin": -0.25,
+                                "yMax": 0.25,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "e5a66bdc-37cc-4317-b4c6-a1b88c3392e9",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 0,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "4b4ffc04-4534-4924-84d4-9f3b9e438d81",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 1.25,
+                                                    "zMax": 1.25,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "ee63836f-b03a-428b-8fb9-9848595124a4",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 1.25,
+                                                    "zMax": 1.25,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "3f883945-6d03-4a4b-a1bb-511213c3b9da",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": 0,
+                                                    "xMax": 0,
+                                                    "yMin": 0,
+                                                    "yMax": 0,
+                                                    "zMin": 2,
+                                                    "zMax": 2.5,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+    ],
+}
