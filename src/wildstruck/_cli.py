@@ -54,7 +54,7 @@ def wildstruck(
     if version:
         from ._version import __version__
 
-        print(__version__)
+        print(f"Wildstruck v{__version__}")
         return 0
 
     if configSchema:
