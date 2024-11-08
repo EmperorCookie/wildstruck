@@ -28,7 +28,6 @@
                 "C0C0C0": "cliffWinter",
                 "4080A0": "waterMud",
                 "80D0C0": "waterSand",
-                "4090C0": "waterStone",
             },
         },
         {
@@ -58,7 +57,6 @@
                 "608060": "forestMixedSnow",
                 "0080FF": "waterMud",
                 "00FFFF": "waterSand",
-                "608090": "waterStone",
             },
         },
     ],
@@ -739,21 +737,6 @@
                         "value": {
                             "tileRef": {
                                 "name": "mud",
-                            },
-                        },
-                    },
-                ],
-            },
-        },
-        {
-            "name": "waterStone",
-            "tiles": {
-                "variants": [
-                    {
-                        "weight": 1,
-                        "value": {
-                            "tileRef": {
-                                "name": "stone",
                             },
                         },
                     },
