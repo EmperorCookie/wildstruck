@@ -71,6 +71,7 @@ jobs:
         # Build for PyPi
         python -m build -w
         # Build for Windows
+        python -m pip install -e .
         pyinstaller --specpath ./artifacts --workpath ./artifacts \
           -n wildstruck --distpath ./dist-win -F main.py
         deactivate

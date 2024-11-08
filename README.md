@@ -9,6 +9,12 @@ little granularity.
 This tool is a sort of middleground between both options. You draw your map in any paint program and
 the let Wildstruck generate your terrain for you.
 
+# Installation
+
+Find the [latest release](https://github.com/EmperorCookie/wildstruck/releases) and download `wildstruck.zip`. There is no installation, the executable can just be ran.
+
+To install the Python library, use `pip install wildstruck`.
+
 # Usage
 
 Execute "wildstruck.exe" in a command-line to see the help.
