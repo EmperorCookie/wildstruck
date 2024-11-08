@@ -12,7 +12,7 @@ the let Wildstruck generate your terrain for you.
 # Installation
 
 Find the [latest release](https://github.com/EmperorCookie/wildstruck/releases) and download
-`wildstruck.zip`. There is no installation, the executable can just be ran.
+the zip file. There is no installation, the executable can just be ran.
 
 To install the [Python library](https://pypi.org/project/wildstruck/), use `pip install wildstruck`,
 but be aware that it does not inlcude the default config file nor the biomes-test file.
