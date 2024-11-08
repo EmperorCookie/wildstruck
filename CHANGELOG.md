@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/EmperorCookie/wildstruck/compare/v2.0.1...v2.0.2) (2024-11-08)
+
+
+### Bug Fixes
+
+* Fixed example in README ([825182c](https://github.com/EmperorCookie/wildstruck/commit/825182c6e5c5b4ce0adadad71b9ac26677dc8154))
+
 ## [2.0.0](https://github.com/EmperorCookie/wildstruck/compare/v1.0.0...v2.0.0) (2024-11-08)
 
 
