@@ -139,10 +139,10 @@ jobs:
           @semantic-release/release-notes-generator@10.0.3
       env:
         GH_TOKEN: ${{ steps.token.outputs.token }}
-        GIT_AUTHOR_NAME: cookie-bot
-        GIT_AUTHOR_EMAIL: frederick.dufresne@gmail.com
-        GIT_COMMITTER_NAME: cookie-bot
-        GIT_COMMITTER_EMAIL: frederick.dufresne@gmail.com
+        GIT_AUTHOR_NAME: github-actions[bot]
+        GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        GIT_COMMITTER_NAME: github-actions[bot]
+        GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
 
     - name: Publish Release Package
       env:
