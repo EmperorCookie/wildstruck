@@ -35,7 +35,7 @@ To edit the file, simply follow the instructions given by the `--configSchema` o
 
 ### Biomes
 
-See comments in the config file to know which biomes have been created so far.
+See comments in the [config file](https://github.com/EmperorCookie/wildstruck/blob/main/wildstruck.json5) to know which biomes have been created so far.
 
 ### Configuration File Updates
 
