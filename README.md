@@ -28,14 +28,14 @@ wildstruck wildstruck.json5 biomes-test.png --maxHeight 1
 
 ## Configuration
 
-The included `wildstruck.json5` configuration file comes with basic biomes and two ways to map
+The included [`wildstruck.json5`](https://github.com/EmperorCookie/wildstruck/blob/main/wildstruck.json5) configuration file comes with basic biomes and two ways to map
 colors to biomes.
 
 To edit the file, simply follow the instructions given by the `--configSchema` option.
 
 ### Biomes
 
-See comments in the [config file](https://github.com/EmperorCookie/wildstruck/blob/main/wildstruck.json5) to know which biomes have been created so far.
+See comments in the config file to know which biomes have been created so far.
 
 ### Configuration File Updates
 
