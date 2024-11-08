@@ -122,6 +122,7 @@ jobs:
         zip ./wildstruck-v${{ needs.dry-run.outputs.new-version }}.zip \
           ./wildstruck.exe \
           ./README.md \
+          ./LICENSE \
           ./wildstruck.json5 \
           ./biomes-test.png
 
