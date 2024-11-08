@@ -108,7 +108,7 @@
                                                 },
                                             },
                                             {
-                                                "weight": 0.1,
+                                                "weight": 0.2,
                                                 "value": {
                                                     "name": "rockDesert",
                                                 },
@@ -3339,49 +3339,15 @@
                                         {
                                             "weight": 1,
                                             "value": {
-                                                "uuid": "c0a9dd10-96b7-46fe-8ff3-9d46184f106f",
+                                                "uuid": "28b95682-24d4-48c1-ae40-c5f02404c9b1",
                                                 "angleSnap": 15,
                                                 "offset": {
                                                     "xMin": 0,
                                                     "xMax": 0,
                                                     "yMin": 0,
                                                     "yMax": 0,
-                                                    "zMin": -2.5,
-                                                    "zMax": -2,
-                                                    "degMin": 0,
-                                                    "degMax": 360,
-                                                },
-                                            },
-                                        },
-                                        {
-                                            "weight": 1,
-                                            "value": {
-                                                "uuid": "143c029c-34d6-4821-a5d3-76437114b7e0",
-                                                "angleSnap": 15,
-                                                "offset": {
-                                                    "xMin": 0,
-                                                    "xMax": 0,
-                                                    "yMin": 0,
-                                                    "yMax": 0,
-                                                    "zMin": -2.5,
-                                                    "zMax": -2,
-                                                    "degMin": 0,
-                                                    "degMax": 360,
-                                                },
-                                            },
-                                        },
-                                        {
-                                            "weight": 1,
-                                            "value": {
-                                                "uuid": "e2ed469f-6bce-4da0-823a-76dc049d8cbf",
-                                                "angleSnap": 15,
-                                                "offset": {
-                                                    "xMin": 0,
-                                                    "xMax": 0,
-                                                    "yMin": 0,
-                                                    "yMax": 0,
-                                                    "zMin": -2.5,
-                                                    "zMax": -2,
+                                                    "zMin": -2.25,
+                                                    "zMax": -1.25,
                                                     "degMin": 0,
                                                     "degMax": 360,
                                                 },
