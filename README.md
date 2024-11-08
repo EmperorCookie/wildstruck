@@ -43,6 +43,8 @@ IMPORTANT: New versions of the download file will not be created for updates tha
 version bump, therefore the latest version of these files will be found in the repository itself if
 there is a discrepancy.
 
+See the [commits for `wildstruck.json5`](https://github.com/EmperorCookie/wildstruck/commits/main/wildstruck.json5) for a detailed changelog.
+
 # Roadmap
 
 Roughly in order of priorities:
