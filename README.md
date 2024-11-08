@@ -23,7 +23,7 @@ Execute "wildstruck.exe" in a command-line to see the help.
 ## Example
 
 ```
-wildstruck wildstruck.json5 biomes-test.png --maxHeight 1
+wildstruck render wildstruck.json5 biomes-test.png --maxHeight 1
 ```
 
 ## Configuration
