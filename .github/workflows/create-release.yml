@@ -76,15 +76,14 @@ jobs:
 
     - name: Publish PyPi
       shell: bash
-      env:
-        TWINE_NON_INTERACTIVE: "1"
-        TWINE_USERNAME: __token__
-        TWINE_PASSWORD: '${{ secrets.PYPI_API_TOKEN }}'
       run: |
         python -m venv venv/publish
         source venv/publish/Scripts/activate
         python -m pip install twine
-        python -m twine upload --verbose --repository testpypi ./dist/*
+        export TWINE_NON_INTERACTIVE=1
+        export TWINE_USERNAME=__token__
+        export TWINE_PASSWORD="${{ secrets.PYPI_API_TOKEN }}"
+        python -m twine upload --repository testpypi ./dist/*
         deactivate
 
     - name: Put Executable
