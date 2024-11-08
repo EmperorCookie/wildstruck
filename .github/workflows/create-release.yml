@@ -117,7 +117,7 @@ jobs:
 
     - name: Create Release Package
       run: |
-        zip -r ./dist-win/wildstruck.zip \
+        zip ./wildstruck.zip \
           ./wildstruck.exe \
           ./README.md \
           ./wildstruck.json5 \
