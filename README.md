@@ -11,14 +11,15 @@ the let Wildstruck generate your terrain for you.
 
 # Installation
 
-Find the [latest release](https://github.com/EmperorCookie/wildstruck/releases) and download `wildstruck.zip`. There is no installation, the executable can just be ran.
+Find the [latest release](https://github.com/EmperorCookie/wildstruck/releases) and download
+`wildstruck.zip`. There is no installation, the executable can just be ran.
 
-To install the Python library, use `pip install wildstruck`, but be aware that it does not inlcude
-the default config file nor the biomes-test file.
+To install the [Python library](https://pypi.org/project/wildstruck/), use `pip install wildstruck`,
+but be aware that it does not inlcude the default config file nor the biomes-test file.
 
 # Usage
 
-Execute "wildstruck.exe" in a command-line to see the help.
+Execute `wildstruck.exe` in a command-line to see the help.
 
 ## Example
 
@@ -28,8 +29,8 @@ wildstruck render wildstruck.json5 biomes-test.png --maxHeight 1
 
 ## Configuration
 
-The included [`wildstruck.json5`](https://github.com/EmperorCookie/wildstruck/blob/main/wildstruck.json5) configuration file comes with basic biomes and two ways to map
-colors to biomes.
+The included [`wildstruck.json5`](https://github.com/EmperorCookie/wildstruck/blob/main/wildstruck.json5)
+configuration file comes with basic biomes and two ways to map colors to biomes.
 
 To edit the file, simply follow the instructions given by the `--configSchema` option.
 
