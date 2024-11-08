@@ -753,6 +753,45 @@
                             "tileRef": {
                                 "name": "stone",
                             },
+                            "clutter": [
+                                {
+                                    "coverage": 0.75,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "smallStone",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.25,
+                                                "value": {
+                                                    "name": "dirt",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "boulderLow",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "coal",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.01,
+                                                "value": {
+                                                    "name": "coalPickaxe",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                            ],
                         },
                     },
                 ],
@@ -1831,6 +1870,141 @@
                                                     "yMax": 0.25,
                                                     "zMin": -1.8,
                                                     "zMax": -1.6,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "boulderLow",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "451e9727-bc73-462c-8c46-512687e6e170",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -1.1,
+                                                    "zMax": -0.9,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "coal",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "31f47e65-9b70-4701-907b-db49e891fe3b",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": 0,
+                                                    "degMin": 0,
+                                                    "degMax": 360,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "coalPickaxe",
+            "sources": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": 0,
+                                "xMax": 0,
+                                "yMin": 0,
+                                "yMax": 0,
+                                "zMin": 0,
+                                "zMax": 0,
+                                "degMin": 0,
+                                "degMax": 360,
+                            },
+                            "stack": [
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "770877ea-478f-424d-b50b-e02f52928d67",
+                                                "angleSnap": 15,
+                                                "offset": {
+                                                    "xMin": -0.25,
+                                                    "xMax": 0.25,
+                                                    "yMin": -0.25,
+                                                    "yMax": 0.25,
+                                                    "zMin": -0.25,
+                                                    "zMax": 0,
                                                     "degMin": 0,
                                                     "degMax": 360,
                                                 },
