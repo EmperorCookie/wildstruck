@@ -154,4 +154,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh release upload ${{ steps.release.outputs.new_release_git_tag }} ./dist-win/wildstruck.zip
+        gh release upload ${{ steps.release.outputs.new_release_git_tag }} ./wildstruck.zip
