@@ -17,7 +17,7 @@
             }
         ],
         [
-            "@semanti-release/changelog",
+            "@semantic-release/changelog",
             {
                 "changelogFile": "CHANGELOG.md"
             }
