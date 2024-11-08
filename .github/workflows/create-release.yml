@@ -40,6 +40,7 @@ jobs:
   create-build:
     name: Create Build
     runs-on: windows-latest
+    environment: main
     needs:
     - dry-run
     if: needs.dry-run.outputs.published == 'true'
@@ -76,15 +77,14 @@ jobs:
 
     - name: Publish PyPi
       shell: bash
+      env:
+        TWINE_NON_INTERACTIVE: "1"
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: "${{ secrets.PYPI_API_TOKEN }}"
       run: |
         python -m venv venv/publish
         source venv/publish/Scripts/activate
         python -m pip install twine
-        export TWINE_NON_INTERACTIVE=1
-        export TWINE_USERNAME=__token__
-        export TWINE_PASSWORD="${{ secrets.PYPI_API_TOKEN }}"
-        # I'm gonna invalidate the token anyway
-        echo $TWINE_PASSWORD
         python -m twine upload --verbose --repository testpypi ./dist/*
         deactivate
 
