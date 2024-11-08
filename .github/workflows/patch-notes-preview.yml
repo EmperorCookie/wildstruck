@@ -30,9 +30,9 @@ jobs:
         npm install \
           conventional-changelog-conventionalcommits@5.0.0 \
           @semantic-release/changelog@6.0.3 \
-          @semantic-release/commit-analyzer@13.0.0 \
-          @semantic-release/github@11.0.1 \
-          @semantic-release/release-notes-generator@14.0.1
+          @semantic-release/commit-analyzer@9.0.2 \
+          @semantic-release/github@8.0.5 \
+          @semantic-release/release-notes-generator@10.0.3
 
     - name: Patch Notes
       id: patch-notes
