@@ -37,6 +37,12 @@ To edit the file, simply follow the instructions given by the `--configSchema` o
 
 See comments in the config file to know which biomes have been created so far.
 
+### Configuration File Updates
+
+IMPORTANT: New versions of the download file will not be created for updates that do not require a
+version bump, therefore the latest version of these files will be found in the repository itself if
+there is a discrepancy.
+
 # Roadmap
 
 Roughly in order of priorities:
