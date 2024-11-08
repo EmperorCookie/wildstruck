@@ -53,7 +53,10 @@ AnyNamed = TypeVar("AnyNamed", bound=Named)
 
 class BiomeMap(Named):
     colors: Dict[str, str] = Field(
-        json_schema_extra={"minProperties": 1, "patternProperties": r"^[a-fA-F0-9]{6}$"}
+        json_schema_extra={
+            "minProperties": 1,
+            "patternProperties": {r"^[a-fA-F0-9]{6}$": {"title": "BiomeName", "type": "string"}},
+        }
     )
 
 
