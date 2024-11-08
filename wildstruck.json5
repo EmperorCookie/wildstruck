@@ -447,6 +447,12 @@
                                                     "name": "mossRock",
                                                 },
                                             },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "mossLog",
+                                                },
+                                            },
                                         ],
                                     },
                                 },
@@ -527,6 +533,12 @@
                                                     "name": "mossRock",
                                                 },
                                             },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "mossLog",
+                                                },
+                                            },
                                         ],
                                     },
                                 },
@@ -602,6 +614,12 @@
                                                     "name": "vine",
                                                 },
                                             },
+                                            {
+                                                "weight": 0.2,
+                                                "value": {
+                                                    "name": "mossLog",
+                                                },
+                                            },
                                         ],
                                     },
                                 },
@@ -669,6 +687,12 @@
                                                 "weight": 0.5,
                                                 "value": {
                                                     "name": "vine",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.2,
+                                                "value": {
+                                                    "name": "mossLog",
                                                 },
                                             },
                                         ],
