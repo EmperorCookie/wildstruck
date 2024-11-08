@@ -20,7 +20,7 @@ jobs:
         fetch-depth: 0
 
     - name: Semantic Release Dry Run
-      uses: cycjimmy/semantic-release-action@v4
+      uses: cycjimmy/semantic-release-action@v3
       id: dry-release
       with:
         dry_run: true
@@ -132,7 +132,7 @@ jobs:
     # Run this step as late as possible to avoid creating releases for failed pipelines
     - name: Create Release
       id: release
-      uses: cycjimmy/semantic-release-action@v4
+      uses: cycjimmy/semantic-release-action@v3
       with:
         extra_plugins: |
           conventional-changelog-conventionalcommits@6.0.0
