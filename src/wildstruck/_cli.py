@@ -13,7 +13,6 @@ def wildstruck(
     seed: int | str = 9001,
     exportChunkSize: int = 32,
     configSchema: bool = False,
-    version: bool = False,
 ) -> int:
     """
     Converts biome map and heightmap images into TaleSpire slabs to be pasted in-game.
@@ -47,16 +46,7 @@ def wildstruck(
         configSchema:
             If specified, outputs the jsonschema for the config file and exits. Use in conjunction
             with jsonschemavalidator.net to make changes to the config file.
-
-        version:
-            Outputs the version and exits.
     """
-    if version:
-        from ._version import __version__
-
-        print(f"Wildstruck v{__version__}")
-        return 0
-
     if configSchema:
         import json
 
