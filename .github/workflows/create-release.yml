@@ -84,7 +84,7 @@ jobs:
         python -m venv venv/publish
         source venv/publish/Scripts/activate
         python -m pip install twine
-        python -m twine upload --repository testpypi ./dist/*
+        python -m twine upload --verbose --repository testpypi ./dist/*
         deactivate
 
     - name: Put Executable
