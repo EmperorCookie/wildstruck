@@ -65,6 +65,10 @@ def wildstruck_render(
 
 
 def wildstruck_schema() -> int:
+    """
+    Outputs the jsonschema for the config file and exits. Use in conjunction with
+    jsonschemavalidator.net to make changes to the config file.
+    """
     import json
 
     from .renderer.config import RendererConfig
@@ -74,6 +78,9 @@ def wildstruck_schema() -> int:
 
 
 def wildstruck_version() -> int:
+    """
+    Print the version and exits.
+    """
     from ._version import __version__
 
     print(f"v{__version__}")
