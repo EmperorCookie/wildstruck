@@ -13,7 +13,8 @@ the let Wildstruck generate your terrain for you.
 
 Find the [latest release](https://github.com/EmperorCookie/wildstruck/releases) and download `wildstruck.zip`. There is no installation, the executable can just be ran.
 
-To install the Python library, use `pip install wildstruck`.
+To install the Python library, use `pip install wildstruck`, but be aware that it does not inlcude
+the default config file nor the biomes-test file.
 
 # Usage
 
@@ -40,7 +41,6 @@ See comments in the config file to know which biomes have been created so far.
 
 Roughly in order of priorities:
 
-1. Create release pipeline
 1. Add option to use nearest biome by color when missing
 1. Support for TaleSpire slabs as props
 1. Tileset behavior (to allow for paths and walls to detect what's around them)
