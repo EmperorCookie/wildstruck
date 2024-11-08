@@ -9,7 +9,12 @@ authors = [{ name = "Fred Dufresne" }]
 description = "Terrain generator for TaleSpire"
 readme = "README.md"
 license = { file = "LICENSE" }
-dependencies = ["pydantic>=2.9,<2.10", "pillow>=11,<11.1", "pyjson5>=1.6,<1.7"]
+dependencies = [
+    "pydantic>=2.9,<2.10",
+    "pillow>=11,<11.1",
+    "pyjson5>=1.6,<1.7",
+    "pyperclip>=1.9,<1.10",
+]
 
 [tool.hatch.build]
 packages = ["src/wildstruck"]

@@ -119,7 +119,7 @@ jobs:
 
     - name: Create Release Package
       run: |
-        zip ./wildstruck.zip \
+        zip ./wildstruck-v${{ needs.dry-run.outputs.new-version }}.zip \
           ./wildstruck.exe \
           ./README.md \
           ./wildstruck.json5 \
