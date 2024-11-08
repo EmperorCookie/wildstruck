@@ -1,3 +1,11 @@
+## [2.0.3](https://github.com/EmperorCookie/wildstruck/compare/v2.0.2...v2.0.3) (2024-11-08)
+
+
+### Bug Fixes
+
+* Added descriptions to the schema and version CLI commands ([6086ad1](https://github.com/EmperorCookie/wildstruck/commit/6086ad17e85b83b098846a953580df610a6100dd))
+* Added missing attribution for pygparse ([46366ec](https://github.com/EmperorCookie/wildstruck/commit/46366ecd88b9f4586d878eedccd200784b6cbdcb))
+
 ## [2.0.2](https://github.com/EmperorCookie/wildstruck/compare/v2.0.1...v2.0.2) (2024-11-08)
 
 
