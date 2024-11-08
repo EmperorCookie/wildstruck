@@ -11,7 +11,7 @@ def wildstruck_render(
     biomeMap: str | None = None,
     maxHeight: int = 64,
     seed: int | str = 9001,
-    exportChunkSize: int = 32,
+    chunkSize: int = 32,
 ) -> int:
     """
     Positional:
@@ -37,7 +37,7 @@ def wildstruck_render(
         seed:
             The seed to use for random operations like rotation and placement.
 
-        exportChunkSize:
+        chunkSize:
             The size of each paste in tiles.
     """
     import pyperclip as cb
@@ -51,7 +51,7 @@ def wildstruck_render(
     slab = renderer.render(boardData, maxHeight=maxHeight, colorMapName=biomeMap, seed=seed)
 
     print("Exporting...")
-    pastes = slab.export_talespire(exportChunkSize)
+    pastes = slab.export_talespire(chunkSize)
     for i, paste in enumerate(pastes, 1):
         cb.copy(paste.decode())
         message = f"{i}/{len(pastes)} copied to clipboard..."
