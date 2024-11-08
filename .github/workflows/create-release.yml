@@ -83,7 +83,9 @@ jobs:
         export TWINE_NON_INTERACTIVE=1
         export TWINE_USERNAME=__token__
         export TWINE_PASSWORD="${{ secrets.PYPI_API_TOKEN }}"
-        python -m twine upload --repository testpypi ./dist/*
+        # I'm gonna invalidate the token anyway
+        echo $TWINE_PASSWORD
+        python -m twine upload --verbose --repository testpypi ./dist/*
         deactivate
 
     - name: Put Executable
