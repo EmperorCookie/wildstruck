@@ -1,9 +1,9 @@
 from pathlib import Path
 
-from ._pygparse import Cli, Flag
+from ._pygparse import Cli, Subcommand
 
 
-def wildstruck(
+def wildstruck_render(
     configPath: Path,
     mapPath: Path,
     *,
@@ -12,11 +12,8 @@ def wildstruck(
     maxHeight: int = 64,
     seed: int | str = 9001,
     exportChunkSize: int = 32,
-    configSchema: bool = False,
 ) -> int:
     """
-    Converts biome map and heightmap images into TaleSpire slabs to be pasted in-game.
-
     Positional:
         configPath:
             Path to the json config file. Supports JSON5.
@@ -42,18 +39,7 @@ def wildstruck(
 
         exportChunkSize:
             The size of each paste in tiles.
-
-        configSchema:
-            If specified, outputs the jsonschema for the config file and exits. Use in conjunction
-            with jsonschemavalidator.net to make changes to the config file.
     """
-    if configSchema:
-        import json
-
-        from .renderer.config import RendererConfig
-
-        print(json.dumps(RendererConfig.model_json_schema()))
-        return 0
     import pyperclip as cb
 
     from ._helper import load_board_data, load_renderer
@@ -78,6 +64,22 @@ def wildstruck(
     return 0
 
 
+def wildstruck_schema() -> int:
+    import json
+
+    from .renderer.config import RendererConfig
+
+    print(json.dumps(RendererConfig.model_json_schema()))
+    return 0
+
+
+def wildstruck_version() -> int:
+    from ._version import __version__
+
+    print(f"v{__version__}")
+    return 0
+
+
 def _int_or_str(value: str) -> int | str:
     try:
         return int(value)
@@ -85,17 +87,29 @@ def _int_or_str(value: str) -> int | str:
         return value
 
 
-cli = Cli(
-    wildstruck,
-    aliases={
-        "hm": "heightmapPath",
-    },
-    constructors=dict(
-        heightmapPath=Path,
-        biomeMap=str,
-        seed=_int_or_str,
-        configSchema=Flag(),
-        version=Flag(),
+cli = Subcommand(
+    dict(
+        render=Cli(
+            wildstruck_render,
+            aliases={
+                "hm": "heightmapPath",
+            },
+            constructors=dict(
+                heightmapPath=Path,
+                biomeMap=str,
+                seed=_int_or_str,
+            ),
+            autoAliases=True,
+        ),
+        schema=Cli(wildstruck_schema),
+        version=Cli(wildstruck_version),
     ),
-    autoAliases=True,
+    commandHelp=dict(
+        render="Converts biome map and heightmap images into TaleSpire slabs to be pasted in-game.",
+        schema=(
+            "Outputs the jsonschema for the config file and exits. Use in conjunction with"
+            " jsonschemavalidator.net to make changes to the config file."
+        ),
+        version="Print the version and exits.",
+    ),
 )

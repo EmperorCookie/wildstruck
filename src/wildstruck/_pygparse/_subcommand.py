@@ -62,9 +62,10 @@ class Subcommand:
             output.append(
                 f"- {name}"
                 # Command summary
-                f"{(' ' + self.commandHelp.get(name, '')) if name in self.commandHelp else ''}"
+                f"{(': ' + self.commandHelp.get(name, '')) if name in self.commandHelp else ''}"
             )
             if isinstance(command, Subcommand):
+                output.append(" " * indent + f"{name} subcommands:")
                 output.extend([" " * indent + c for c in command.commands_string(indent)])
         return output
 
