@@ -1,6 +1,6 @@
 # Wildstruck
 
-A terrain generator for TaleSpire.
+A data-driven terrain generator for TaleSpire.
 
 Procedural generators are good for when you don't know what you want. Modular tilesets are good for
 when you know what you want, but it can be hard to create or find good ones, and they offer very
