@@ -26,6 +26,9 @@ class RendererConfig(BaseModel):
     tiles: List["Tile"] = Field(default_factory=list)
     props: List["Prop"] = Field(default_factory=list)
 
+    class Config:
+        extra = "forbid"
+
     def model_post_init(self, _):
         self._activeBiomeMap = self.biomeMaps[0]
 
@@ -49,6 +52,9 @@ class RendererConfig(BaseModel):
 class Named(BaseModel):
     name: str
 
+    class Config:
+        extra = "forbid"
+
 
 AnyNamed = TypeVar("AnyNamed", bound=Named)
 
@@ -62,6 +68,9 @@ class BiomeMap(Named):
 
 class WeightedVarying(BaseModel, Generic[T]):
     variants: List["WeightedVariant[T]"] = Field(default_factory=list)
+
+    class Config:
+        extra = "forbid"
 
     def choose(
         self, variantFilter: Callable[["WeightedVariant[T]"], bool] | None = None
@@ -78,6 +87,9 @@ class WeightedVariant(BaseModel, Generic[T]):
     weight: Annotated[float, Ge(0)]
     value: T
 
+    class Config:
+        extra = "forbid"
+
 
 class Biome(Named):
     tiles: "WeightedVarying[BiomeTile]"
@@ -86,6 +98,9 @@ class Biome(Named):
 class BiomeTile(BaseModel):
     tileRef: "NamedRef"
     clutter: List["Clutter"] = Field(default_factory=list)
+
+    class Config:
+        extra = "forbid"
 
 
 class RandomMethod(str, Enum):
@@ -98,6 +113,9 @@ class Clutter(BaseModel):
     randomMethod: RandomMethod = Field(default=RandomMethod.TRUE)
     props: "WeightedVarying[NamedRef]"
 
+    class Config:
+        extra = "forbid"
+
     def choose(self) -> "NamedRef | None":
         variant = self.props.choose()
         if variant is not None:
@@ -107,6 +125,9 @@ class Clutter(BaseModel):
 
 class NamedRef(BaseModel):
     name: str
+
+    class Config:
+        extra = "forbid"
 
 
 class Tile(Named):
@@ -119,6 +140,9 @@ class Tile(Named):
 
 class Source(BaseModel):
     offset: "RandomTransform"
+
+    class Config:
+        extra = "forbid"
 
     @abstractmethod
     def generate_asset(self, position: Vec3, rotation: float) -> Any:
@@ -138,6 +162,9 @@ class RandomTransform(BaseModel):
     degMin: float
     degMax: float
     degSnap: float | None = Field(default=None)
+
+    class Config:
+        extra = "forbid"
 
     @property
     def vecMin(self) -> Vec3:
@@ -175,6 +202,9 @@ def _snap(value: float, snap: float) -> float:
 
 class TaleSpireSource(Source):
     uuid: Uuid
+
+    class Config:
+        extra = "forbid"
 
     def generate_asset(self, position: Vec3, rotation: float) -> TaleSpireAsset:
         return TaleSpireAsset(self.uuid, *self.offset.apply(position, rotation))
