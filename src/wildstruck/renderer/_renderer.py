@@ -84,7 +84,7 @@ class Renderer:
                 or not all(((c == color and h == z) for c, h in data))
             ):
                 tileSize = 1
-        tileSourceVariant = tile.sources.choose(lambda t: (t.value.size == tileSize))
+        tileSourceVariant = tile.source.choose(lambda t: (t.value.size == tileSize))
         if tileSourceVariant is not None:
             tileSource = tileSourceVariant.value
 
@@ -146,7 +146,7 @@ class Renderer:
                         continue
                     propVariant = self.config.find_by_name(
                         propRef.name, self.config.props
-                    ).sources.choose()
+                    ).source.choose()
                     if propVariant is None:
                         continue
                     prop = propVariant.value

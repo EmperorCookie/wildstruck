@@ -978,7 +978,7 @@
     "tiles": [
         {
             "name": "jungle",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1080,7 +1080,7 @@
         },
         {
             "name": "crackedDirt",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1125,7 +1125,7 @@
         },
         {
             "name": "mud",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1170,7 +1170,7 @@
         },
         {
             "name": "grass",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1234,7 +1234,7 @@
         },
         {
             "name": "snow",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1279,7 +1279,7 @@
         },
         {
             "name": "sand",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1324,7 +1324,7 @@
         },
         {
             "name": "sandRocky",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1388,7 +1388,7 @@
         },
         {
             "name": "stone",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1454,7 +1454,7 @@
     "props": [
         {
             "name": "plantLeaf",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1533,7 +1533,7 @@
         },
         {
             "name": "plantLeafBig",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1578,7 +1578,7 @@
         },
         {
             "name": "pineCones",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1623,7 +1623,7 @@
         },
         {
             "name": "fern",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1685,7 +1685,7 @@
         },
         {
             "name": "flowerJungle",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1730,7 +1730,7 @@
         },
         {
             "name": "grass",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1792,7 +1792,7 @@
         },
         {
             "name": "snow",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1837,7 +1837,7 @@
         },
         {
             "name": "snowSmall",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1882,7 +1882,7 @@
         },
         {
             "name": "dirt",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -1927,7 +1927,7 @@
         },
         {
             "name": "rockLow",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2006,7 +2006,7 @@
         },
         {
             "name": "boulderLow",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2051,7 +2051,7 @@
         },
         {
             "name": "boulderLowWinter",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2096,7 +2096,7 @@
         },
         {
             "name": "coal",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2141,7 +2141,7 @@
         },
         {
             "name": "coalPickaxe",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2186,7 +2186,7 @@
         },
         {
             "name": "pebbles",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2231,7 +2231,7 @@
         },
         {
             "name": "clam",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2276,7 +2276,7 @@
         },
         {
             "name": "seashell",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2321,7 +2321,7 @@
         },
         {
             "name": "clamsSeashells",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2366,7 +2366,7 @@
         },
         {
             "name": "smallStone",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2411,7 +2411,7 @@
         },
         {
             "name": "vine",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2473,7 +2473,7 @@
         },
         {
             "name": "mushroomBrown",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2552,7 +2552,7 @@
         },
         {
             "name": "mushroomRed",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2614,7 +2614,7 @@
         },
         {
             "name": "mushroomForest",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2676,7 +2676,7 @@
         },
         {
             "name": "mushroomBlue",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2738,7 +2738,7 @@
         },
         {
             "name": "mushroomMixed",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2800,7 +2800,7 @@
         },
         {
             "name": "mossRock",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2845,7 +2845,7 @@
         },
         {
             "name": "moss",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2890,7 +2890,7 @@
         },
         {
             "name": "mossLog",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2935,7 +2935,7 @@
         },
         {
             "name": "skullDesert",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -2980,7 +2980,7 @@
         },
         {
             "name": "bonesDesert",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -3042,7 +3042,7 @@
         },
         {
             "name": "rockDesert",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -3087,7 +3087,7 @@
         },
         {
             "name": "cactus",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -3149,7 +3149,7 @@
         },
         {
             "name": "cactusBulb",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -3228,7 +3228,7 @@
         },
         {
             "name": "bushDead",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -3273,7 +3273,7 @@
         },
         {
             "name": "bushDeadBig",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -3318,7 +3318,7 @@
         },
         {
             "name": "bush",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -3363,7 +3363,7 @@
         },
         {
             "name": "tree",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -3408,7 +3408,7 @@
         },
         {
             "name": "treeDead",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -3453,7 +3453,7 @@
         },
         {
             "name": "treeDeadTall",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -3498,7 +3498,7 @@
         },
         {
             "name": "treeDeadWide",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -3543,7 +3543,7 @@
         },
         {
             "name": "treeJungle",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 1,
@@ -3955,7 +3955,7 @@
         },
         {
             "name": "treePine",
-            "sources": {
+            "source": {
                 "variants": [
                     {
                         "weight": 0.05,

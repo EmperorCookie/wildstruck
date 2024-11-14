@@ -110,11 +110,11 @@ class NamedRef(BaseModel):
 
 
 class Tile(Named):
-    sources: "WeightedVarying[TaleSpireTileSource]"
+    source: "WeightedVarying[TaleSpireTileSource]"
 
     @property
     def twoByTwoAvailable(self) -> bool:
-        return any((v.value.size == 2 for v in self.sources.variants))
+        return any((v.value.size == 2 for v in self.source.variants))
 
 
 class Source(BaseModel):
@@ -193,7 +193,7 @@ class TaleSpireTileSource(TileSource):
 
 
 class Prop(Named):
-    sources: "WeightedVarying[StackedSource]"
+    source: "WeightedVarying[StackedSource]"
 
 
 class StackedSource(Source):
