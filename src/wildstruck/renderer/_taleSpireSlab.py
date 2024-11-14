@@ -1,5 +1,6 @@
 from collections import defaultdict
 import dataclasses as dc
+from math import ceil
 from typing import Dict, Iterator, List, Tuple
 
 
@@ -49,10 +50,13 @@ class TaleSpireSlab:
 
         pastes = []
         remainingAssets = self.assets.copy()
-        for cy in range(int(yMax // chunkSize + 1)):
-            for cx in range(int(xMax // chunkSize + 1)):
-                x1, y1 = cx * chunkSize, cy * chunkSize
-                x2, y2 = x1 + chunkSize, y1 + chunkSize
+        cxMax, cyMax = ceil(xMax / chunkSize), ceil(yMax / chunkSize)
+        for cy in range(cxMax):
+            for cx in range(cyMax):
+                x1 = -chunkSize if cx == 0 else cx * chunkSize
+                y1 = -chunkSize if cy == 0 else cy * chunkSize
+                x2 = chunkSize * (cx + (2 if cx >= cxMax - 1 else 1))
+                y2 = chunkSize * (cy + (2 if cy >= cyMax - 1 else 1))
 
                 instances = defaultdict(list)
                 unusedAssets = []
