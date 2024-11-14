@@ -1,6 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass
-from functools import partial, singledispatchmethod
+from functools import partial
 from itertools import chain, product
 from math import ceil, cos, floor, prod, sin, sqrt
 from operator import add, floordiv, invert, mod, mul, neg, sub, truediv
