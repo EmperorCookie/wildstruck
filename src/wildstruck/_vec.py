@@ -2,7 +2,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from functools import partial, singledispatchmethod
 from itertools import chain, product
-from math import ceil, floor, prod, sqrt
+from math import ceil, cos, floor, prod, sin, sqrt
 from operator import add, floordiv, invert, mod, mul, neg, sub, truediv
 import random
 from statistics import mean, median
@@ -221,6 +221,9 @@ class Vec(Generic[T]):
         return repr(self)
 
 
+Number = int | float | complex
+
+
 class Vec2(Vec[T]):
     def __init__(self, *values: T) -> None:
         super().__init__(*values, size=2)
@@ -244,6 +247,10 @@ class Vec2(Vec[T]):
     @staticmethod
     def Random() -> "Vec2":
         return Vec2(*(random.random() for _ in range(2)))
+
+    def rotate(self: Vec[Number], radians: float) -> "Vec2[Number]":
+        cd, sd = cos(radians), sin(radians)
+        return Vec2(self.x * cd - self.y * sd, self.x * sd + self.y * cd)
 
 
 class Vec3(Vec[T]):
@@ -273,6 +280,15 @@ class Vec3(Vec[T]):
     @staticmethod
     def Random() -> "Vec3":
         return Vec3(*(random.random() for _ in range(3)))
+
+    def rotate_around(self: Vec[Number], axis: "Vec3[Number]", radians: float) -> "Vec3[Number]":
+        # https://stackoverflow.com/a/65016305
+        import quaternion as quat
+
+        qVec = quat.as_quat_array((0.0,) + self.values)
+        qRot = quat.from_rotation_vector(axis.values)
+        result = qRot * qVec * qRot.conjugate()
+        return Vec3(*quat.as_float_array(result)[:, 1:])
 
 
 class Vec4(Vec[T]):

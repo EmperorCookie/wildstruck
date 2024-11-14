@@ -150,7 +150,7 @@ class Renderer:
                     prop = propVariant.value
 
                     # Centered x/y, at the top of the tile
-                    propAssets = prop.generate_assets(
+                    propAssets = prop.generate_asset(
                         Vec3(x + tx + 0.5, y + ty + 0.5, z + tileSource.thickness), 0
                     )
                     assets.extend(propAssets)

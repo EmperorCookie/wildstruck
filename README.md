@@ -50,9 +50,9 @@ See the [commits for `wildstruck.json5`](https://github.com/EmperorCookie/wildst
 
 Roughly in order of priorities:
 
+1. Support for TaleSpire slabs as props
 1. Finish biome presets
 1. Add option to use nearest biome by color when missing
-1. Support for TaleSpire slabs as props
 1. Water behavior (fill with tiles up to a specific height)
 1. Tileset behavior (to allow for paths and walls to detect what's around them)
 1. Support for the multi-paste mod

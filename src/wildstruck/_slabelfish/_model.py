@@ -5,6 +5,7 @@ from uuid import UUID as Uuid
 from pydantic import BaseModel, Field, field_validator, model_validator
 
 from ._encoder import encode
+from .._vec import Vec3
 
 
 class AssetTransform(BaseModel):
@@ -24,6 +25,10 @@ class AssetTransform(BaseModel):
     @classmethod
     def rotation_constraint(cls, value: int) -> int:
         return round((value % 360) / 15) * 15
+
+    @property
+    def position(self) -> Vec3[int]:
+        return Vec3(self.x, self.y, self.z)
 
 
 class AssetData(BaseModel):

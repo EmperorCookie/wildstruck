@@ -14,6 +14,7 @@ dependencies = [
     "pillow>=11,<11.1",
     "pyjson5>=1.6,<1.7",
     "pyperclip>=1.9,<1.10",
+    "numpy-quaternion>=2024,<2024.1",
 ]
 
 [tool.hatch.build]

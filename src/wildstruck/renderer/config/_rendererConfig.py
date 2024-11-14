@@ -1,4 +1,5 @@
 from abc import abstractmethod
+from math import radians as deg2rad
 import random
 from typing import Any, Callable, Dict, Generic, Iterable, List, Tuple, TypeVar
 from uuid import UUID as Uuid
@@ -6,8 +7,7 @@ from uuid import UUID as Uuid
 from pydantic import BaseModel, Field
 
 from .._taleSpireAsset import TaleSpireAsset
-
-from ..._vec import Vec3
+from ..._vec import Vec2, Vec3
 
 
 T = TypeVar("T")
@@ -146,27 +146,22 @@ class RandomTransform(BaseModel):
     def degRange(self) -> float:
         return self.degMax - self.degMin
 
-    def apply(self, position: Vec3, rotation: float) -> Tuple[Vec3, float]:
-        return (
-            position + self.vecMin + Vec3.Random() * self.vecRange,
-            rotation + self.degMin + random.random() * self.degRange,
-        )
-
-
-def _generate_talespire_asset(
-    source: "TaleSpireSource | TaleSpireTileSource", position: Vec3, rotation: float
-) -> TaleSpireAsset:
-    newPosition, newRotation = source.offset.apply(position, rotation)
-    newRotation = round(newRotation / source.angleSnap) * source.angleSnap
-    return TaleSpireAsset(source.uuid, newPosition, newRotation)
+    def apply(
+        self, position: Vec3, rotation: float, snap: float | None = None
+    ) -> Tuple[Vec3, float]:
+        outPos = position + self.vecMin + Vec3.Random() * self.vecRange
+        outRot = rotation + self.degMin + random.random() * self.degRange
+        if snap is not None:
+            outRot = round(outRot / snap) * snap
+        return outPos, outRot
 
 
 class TaleSpireSource(Source):
     uuid: Uuid
     angleSnap: float = Field(default=15)
 
-    def generate_asset(self, position: Vec3, rotation: float) -> Any:
-        return _generate_talespire_asset(self, position, rotation)
+    def generate_asset(self, position: Vec3, rotation: float) -> TaleSpireAsset:
+        return TaleSpireAsset(self.uuid, *self.offset.apply(position, rotation, self.angleSnap))
 
 
 class TileSource(Source):
@@ -178,8 +173,8 @@ class TaleSpireTileSource(TileSource):
     uuid: Uuid
     angleSnap: float = Field(default=90)
 
-    def generate_asset(self, position: Vec3, rotation: float) -> Any:
-        return _generate_talespire_asset(self, position, rotation)
+    def generate_asset(self, position: Vec3, rotation: float) -> TaleSpireAsset:
+        return TaleSpireAsset(self.uuid, *self.offset.apply(position, rotation, self.angleSnap))
 
 
 class Prop(Named):
@@ -189,17 +184,18 @@ class Prop(Named):
 class StackedSource(Source):
     stack: List["WeightedVarying[TaleSpireSource]"]
 
-    def generate_asset(self, position: Vec3, rotation: float, stackIndex: int) -> Any:
-        variant = self.stack[stackIndex].choose()
-        if variant is not None:
-            return variant.value.generate_asset(position, rotation)
-        return None
-
-    def generate_assets(self, position: Vec3, rotation: float) -> List[Any]:
+    def generate_asset(self, position: Vec3, rotation: float) -> List[TaleSpireAsset]:
         newPosition, newRotation = self.offset.apply(position, rotation)
         assets = []
         for i in range(len(self.stack)):
-            asset = self.generate_asset(newPosition, newRotation, i)
-            if asset is not None:
+            variant = self.stack[i].choose()
+            if variant is not None:
+                asset = variant.value.generate_asset(Vec3.Zero(), newRotation)
+                asset.position = newPosition + _offset_rotate(asset.position, newRotation)
                 assets.append(asset)
         return assets
+
+
+def _offset_rotate(position: Vec3, rotation: float) -> Vec3:
+    """Rotates `position` around (0, 0) by `rotation` degrees, counter-clockwise."""
+    return Vec3(*Vec2(position.x, position.y).rotate(deg2rad(rotation)), position.z)
