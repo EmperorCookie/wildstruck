@@ -1,3 +1,30 @@
+## [3.0.0](https://github.com/EmperorCookie/wildstruck/compare/v2.0.3...v3.0.0) (2024-11-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* Fixed config validation silently ignoring invalid object keys
+* Renamed 'sources' key to 'source' in config
+* Moved snapping to random transform and added position snapping
+
+### Features
+
+* Added 'validate' command to CLI to remove the jsonschemavalidator.net middleman ([3992c3e](https://github.com/EmperorCookie/wildstruck/commit/3992c3e962c1c5ff3e69fefe7bba92bf57d5a091))
+* Added support for TaleSpire copy-paste props, replace the 'stack' key with a 'data' key in the variants, the value should be a TaleSpire slab string ([562ebc4](https://github.com/EmperorCookie/wildstruck/commit/562ebc4c08d1c0393cc775e08e98771b692e11a6))
+* Modified offset to be optional in config ([0898c5b](https://github.com/EmperorCookie/wildstruck/commit/0898c5ba216266ee86f4936523d7258a4ae549f3))
+* Modified the renderer to use a random seed if none is provided ([4ca9f41](https://github.com/EmperorCookie/wildstruck/commit/4ca9f41ab2e3f6ebdfbff07e6630bba99a5b6b67))
+* Moved snapping to random transform and added position snapping ([4f111d7](https://github.com/EmperorCookie/wildstruck/commit/4f111d73ca41528c32c01cbb266cca53bd6df24c))
+
+
+### Bug Fixes
+
+* Fixed certain config validations being ignored, which could've lead to crashes ([ba519c9](https://github.com/EmperorCookie/wildstruck/commit/ba519c921c63a2509d76456b0600ef1c22b97eb5))
+* Fixed config validation silently ignoring invalid object keys ([207b074](https://github.com/EmperorCookie/wildstruck/commit/207b07494840eb355092dcf9e426eb9ae9b5fef8))
+* Fixed issue where assets would not be included if they were outside of the terrain area ([2b06cdd](https://github.com/EmperorCookie/wildstruck/commit/2b06cdd9d45e4954994f517f1479676c71b52866))
+* Fixed slabs sometimes not pasting due to assets being at invalid coordinates ([97ad02f](https://github.com/EmperorCookie/wildstruck/commit/97ad02f08826bd94b3be944525dff1b523e818b9))
+* Fixed stacked assets not being properly rotated around the origin ([3450e54](https://github.com/EmperorCookie/wildstruck/commit/3450e54addaab8cd07d55bff539a108799366414))
+* Renamed 'sources' key to 'source' in config ([fb28987](https://github.com/EmperorCookie/wildstruck/commit/fb289876bfbda367b844e5533f0d135a16fbe7fa))
+
 ## [2.0.3](https://github.com/EmperorCookie/wildstruck/compare/v2.0.2...v2.0.3) (2024-11-08)
 
 
