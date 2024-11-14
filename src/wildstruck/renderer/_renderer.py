@@ -3,6 +3,8 @@ from math import ceil
 import random
 from typing import Any, Callable, List, MutableMapping, Tuple, TypeVar
 
+from .config._rendererConfig import RandomMethod
+
 
 from .config import RendererConfig
 from ._taleSpireSlab import TaleSpireSlab
@@ -118,12 +120,12 @@ class Renderer:
             for tx in range(tileSize):
 
                 for ci, clutter in enumerate(biomeTile.clutter):
-                    if clutter.randomMethod == "true":
+                    if clutter.randomMethod == RandomMethod.TRUE:
                         # Reduced chance to spawn in true random due to the added dimension
                         if random.random() >= pow(clutter.coverage, 2):
                             continue
 
-                    elif clutter.randomMethod == "jitter":
+                    elif clutter.randomMethod == RandomMethod.JITTER:
                         cx, cy = x + tx, y + ty
                         clutterPlacementKey = f"{biome.name}:{tile.name}:{ci}"
                         clutterPlacement = _get_factory(

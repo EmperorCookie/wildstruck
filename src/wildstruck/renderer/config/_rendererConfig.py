@@ -1,10 +1,12 @@
 from abc import abstractmethod
-from math import radians as deg2rad
+from enum import Enum
+from annotated_types import Ge, Le
+from math import inf, radians as deg2rad
 import random
-from typing import Any, Callable, Dict, Generic, Iterable, List, Tuple, TypeVar
+from typing import Annotated, Any, Callable, Dict, Generic, Iterable, List, Tuple, TypeVar
 from uuid import UUID as Uuid
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, StringConstraints
 
 from .._taleSpireAsset import TaleSpireAsset
 from ..._vec import Vec2, Vec3
@@ -19,12 +21,12 @@ def quantize_rotation(rotation: float, cardinal: bool) -> int:
 
 
 class RendererConfig(BaseModel):
-    biomeMaps: List["BiomeMap"] = Field(default_factory=list, json_schema_extra={"minItems": 1})
+    biomeMaps: List["BiomeMap"] = Field(default_factory=list, min_length=1)
     biomes: List["Biome"] = Field(default_factory=list)
     tiles: List["Tile"] = Field(default_factory=list)
     props: List["Prop"] = Field(default_factory=list)
 
-    def model_post_init(self, __context):
+    def model_post_init(self, _):
         self._activeBiomeMap = self.biomeMaps[0]
 
     @property
@@ -52,12 +54,10 @@ AnyNamed = TypeVar("AnyNamed", bound=Named)
 
 
 class BiomeMap(Named):
-    colors: Dict[str, str] = Field(
-        json_schema_extra={
-            "minProperties": 1,
-            "patternProperties": {r"^[a-fA-F0-9]{6}$": {"title": "BiomeName", "type": "string"}},
-        }
-    )
+    colors: Dict[
+        Annotated[str, StringConstraints(to_upper=True, pattern=r"^[a-fA-F0-9]{6}$")],
+        str,
+    ] = Field(min_length=1)
 
 
 class WeightedVarying(BaseModel, Generic[T]):
@@ -75,7 +75,7 @@ class WeightedVarying(BaseModel, Generic[T]):
 
 
 class WeightedVariant(BaseModel, Generic[T]):
-    weight: float = Field(json_schema_extra={"minimum": 0})
+    weight: Annotated[float, Ge(0)]
     value: T
 
 
@@ -88,9 +88,14 @@ class BiomeTile(BaseModel):
     clutter: List["Clutter"] = Field(default_factory=list)
 
 
+class RandomMethod(str, Enum):
+    TRUE = "true"
+    JITTER = "jitter"
+
+
 class Clutter(BaseModel):
-    coverage: float = Field(json_schema_extra={"minimum": 0, "maximum": 1})
-    randomMethod: str = Field(default="true", json_schema_extra={"enum": ["true", "jitter"]})
+    coverage: Annotated[float, Ge(0), Le(1)]
+    randomMethod: RandomMethod = Field(default=RandomMethod.TRUE)
     props: "WeightedVarying[NamedRef]"
 
     def choose(self) -> "NamedRef | None":
