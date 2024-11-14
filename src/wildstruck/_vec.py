@@ -132,17 +132,12 @@ class Vec(Generic[T]):
     def __len__(self) -> int:
         return self.size
 
-    @singledispatchmethod
     def __getitem__(self: V, key: Any) -> V | T:
+        if isinstance(key, int):
+            return self.values[key]
+        elif isinstance(key, slice):
+            return self.__class__(self.values[key])
         raise TypeError(f"Index type must be int or slice, not {type(key).__name__}")
-
-    @__getitem__.register(int)
-    def _get_at_index(self, index: int) -> T:
-        return self.values[index]
-
-    @__getitem__.register(slice)
-    def _get_slice(self: V, key: slice) -> V:
-        return self.__class__(self.values[key])
 
     def __eq__(self, other) -> bool:
         return all(a == b for a, b in zip(self, self._as_iterator(other, self.size)))
