@@ -167,6 +167,12 @@
                                                     "name": "grass",
                                                 },
                                             },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "fern",
+                                                },
+                                            },
                                         ],
                                     },
                                 },
