@@ -1,5 +1,6 @@
 from collections import defaultdict
 import dataclasses as dc
+from math import ceil, inf
 from typing import Dict, Iterator, List, Tuple
 
 
@@ -49,14 +50,18 @@ class TaleSpireSlab:
 
         pastes = []
         remainingAssets = self.assets.copy()
-        for cy in range(int(yMax // chunkSize + 1)):
-            for cx in range(int(xMax // chunkSize + 1)):
-                x1, y1 = cx * chunkSize, cy * chunkSize
-                x2, y2 = x1 + chunkSize, y1 + chunkSize
+        cxMax, cyMax = ceil(xMax / chunkSize), ceil(yMax / chunkSize)
+        for cy in range(cxMax):
+            for cx in range(cyMax):
+                x1 = chunkSize * (-1 if cx == 0 else cx)
+                y1 = chunkSize * (-1 if cy == 0 else cy)
+                x2 = chunkSize * (cx + (2 if cx >= cxMax - 1 else 1))
+                y2 = chunkSize * (cy + (2 if cy >= cyMax - 1 else 1))
 
                 instances = defaultdict(list)
                 unusedAssets = []
                 lowestAsset = None
+                xLowest, yLowest, zLowest = inf, inf, inf
                 for asset in remainingAssets:
                     if (
                         asset.position.x >= x1
@@ -65,7 +70,12 @@ class TaleSpireSlab:
                         and asset.position.y < y2
                     ):
                         instances[asset.uuid].append(asset)
-                        if lowestAsset is None or asset.position.z < lowestAsset.position.z:
+                        if asset.position.x < xLowest:
+                            xLowest = asset.position.x
+                        if asset.position.y < yLowest:
+                            yLowest = asset.position.y
+                        if asset.position.z < zLowest:
+                            zLowest = asset.position.z
                             lowestAsset = asset
                     else:
                         unusedAssets.append(asset)
@@ -74,10 +84,11 @@ class TaleSpireSlab:
                 if len(instances) == 0:
                     continue
 
-                if lowestAsset is not None and lowestAsset.position.z != 0:
+                if lowestAsset is not None and zLowest > 0:
                     zeroAsset = lowestAsset.copy()
                     zeroAsset.position = Vec3(zeroAsset.position.x, zeroAsset.position.y, 0)
                     instances[zeroAsset.uuid].append(zeroAsset)
+                    zLowest = 0
 
                 slab = sf.Slab(
                     unique_asset_count=len(instances),
@@ -87,9 +98,9 @@ class TaleSpireSlab:
                             instance_count=len(l),
                             instances=[
                                 sf.AssetTransform(
-                                    x=round((a.position.x - x1) * 100),
-                                    y=round((a.position.y - y1) * 100),
-                                    z=round(a.position.z * 100) + 300,
+                                    x=round((a.position.x - xLowest) * 100),
+                                    y=round((a.position.y - yLowest) * 100),
+                                    z=round((a.position.z - zLowest) * 100),
                                     degree=a.snappedRotation,
                                 )
                                 for a in l

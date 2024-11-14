@@ -1,13 +1,16 @@
 from abc import abstractmethod
+from enum import Enum
+from annotated_types import Ge, Le
+from math import inf, radians as deg2rad
 import random
-from typing import Any, Callable, Dict, Generic, Iterable, List, Tuple, TypeVar
+from typing import Annotated, Any, Callable, Dict, Generic, Iterable, List, Tuple, TypeVar
 from uuid import UUID as Uuid
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, StringConstraints
 
 from .._taleSpireAsset import TaleSpireAsset
-
-from ..._vec import Vec3
+from ... import _slabelfish as sf
+from ..._vec import Vec2, Vec3
 
 
 T = TypeVar("T")
@@ -19,12 +22,15 @@ def quantize_rotation(rotation: float, cardinal: bool) -> int:
 
 
 class RendererConfig(BaseModel):
-    biomeMaps: List["BiomeMap"] = Field(default_factory=list, json_schema_extra={"minItems": 1})
+    biomeMaps: List["BiomeMap"] = Field(default_factory=list, min_length=1)
     biomes: List["Biome"] = Field(default_factory=list)
     tiles: List["Tile"] = Field(default_factory=list)
     props: List["Prop"] = Field(default_factory=list)
 
-    def model_post_init(self, __context):
+    class Config:
+        extra = "forbid"
+
+    def model_post_init(self, _):
         self._activeBiomeMap = self.biomeMaps[0]
 
     @property
@@ -47,21 +53,25 @@ class RendererConfig(BaseModel):
 class Named(BaseModel):
     name: str
 
+    class Config:
+        extra = "forbid"
+
 
 AnyNamed = TypeVar("AnyNamed", bound=Named)
 
 
 class BiomeMap(Named):
-    colors: Dict[str, str] = Field(
-        json_schema_extra={
-            "minProperties": 1,
-            "patternProperties": {r"^[a-fA-F0-9]{6}$": {"title": "BiomeName", "type": "string"}},
-        }
-    )
+    colors: Dict[
+        Annotated[str, StringConstraints(to_upper=True, pattern=r"^[a-fA-F0-9]{6}$")],
+        str,
+    ] = Field(min_length=1)
 
 
 class WeightedVarying(BaseModel, Generic[T]):
     variants: List["WeightedVariant[T]"] = Field(default_factory=list)
+
+    class Config:
+        extra = "forbid"
 
     def choose(
         self, variantFilter: Callable[["WeightedVariant[T]"], bool] | None = None
@@ -75,8 +85,11 @@ class WeightedVarying(BaseModel, Generic[T]):
 
 
 class WeightedVariant(BaseModel, Generic[T]):
-    weight: float = Field(json_schema_extra={"minimum": 0})
+    weight: Annotated[float, Ge(0)]
     value: T
+
+    class Config:
+        extra = "forbid"
 
 
 class Biome(Named):
@@ -87,11 +100,22 @@ class BiomeTile(BaseModel):
     tileRef: "NamedRef"
     clutter: List["Clutter"] = Field(default_factory=list)
 
+    class Config:
+        extra = "forbid"
+
+
+class RandomMethod(str, Enum):
+    TRUE = "true"
+    JITTER = "jitter"
+
 
 class Clutter(BaseModel):
-    coverage: float = Field(json_schema_extra={"minimum": 0, "maximum": 1})
-    randomMethod: str = Field(default="true", json_schema_extra={"enum": ["true", "jitter"]})
+    coverage: Annotated[float, Ge(0), Le(1)]
+    randomMethod: RandomMethod = Field(default=RandomMethod.TRUE)
     props: "WeightedVarying[NamedRef]"
+
+    class Config:
+        extra = "forbid"
 
     def choose(self) -> "NamedRef | None":
         variant = self.props.choose()
@@ -103,17 +127,23 @@ class Clutter(BaseModel):
 class NamedRef(BaseModel):
     name: str
 
+    class Config:
+        extra = "forbid"
+
 
 class Tile(Named):
-    sources: "WeightedVarying[TaleSpireTileSource]"
+    source: "WeightedVarying[TaleSpireTileSource]"
 
     @property
     def twoByTwoAvailable(self) -> bool:
-        return any((v.value.size == 2 for v in self.sources.variants))
+        return any((v.value.size == 2 for v in self.source.variants))
 
 
 class Source(BaseModel):
-    offset: "RandomTransform"
+    offset: "RandomTransform" = Field(default_factory=lambda: RandomTransform())
+
+    class Config:
+        extra = "forbid"
 
     @abstractmethod
     def generate_asset(self, position: Vec3, rotation: float) -> Any:
@@ -121,14 +151,21 @@ class Source(BaseModel):
 
 
 class RandomTransform(BaseModel):
-    xMin: float
-    xMax: float
-    yMin: float
-    yMax: float
-    zMin: float
-    zMax: float
-    degMin: float
-    degMax: float
+    xMin: float = Field(default=0)
+    xMax: float = Field(default=0)
+    xSnap: float | None = Field(default=None)
+    yMin: float = Field(default=0)
+    yMax: float = Field(default=0)
+    ySnap: float | None = Field(default=None)
+    zMin: float = Field(default=0)
+    zMax: float = Field(default=0)
+    zSnap: float | None = Field(default=None)
+    degMin: float = Field(default=0)
+    degMax: float = Field(default=0)
+    degSnap: float | None = Field(default=None)
+
+    class Config:
+        extra = "forbid"
 
     @property
     def vecMin(self) -> Vec3:
@@ -147,26 +184,31 @@ class RandomTransform(BaseModel):
         return self.degMax - self.degMin
 
     def apply(self, position: Vec3, rotation: float) -> Tuple[Vec3, float]:
-        return (
-            position + self.vecMin + Vec3.Random() * self.vecRange,
-            rotation + self.degMin + random.random() * self.degRange,
+        outPos = position + self.vecMin + Vec3.Random() * self.vecRange
+        outPos = Vec3(
+            *(
+                (outPos[i] if snap is None else _snap(outPos[i], snap))  # type: ignore # Linter bug
+                for i, snap in enumerate((self.xSnap, self.ySnap, self.zSnap))
+            )
         )
+        outRot = rotation + self.degMin + random.random() * self.degRange
+        if self.degSnap is not None:
+            outRot = _snap(outRot, self.degSnap)
+        return outPos, outRot
 
 
-def _generate_talespire_asset(
-    source: "TaleSpireSource | TaleSpireTileSource", position: Vec3, rotation: float
-) -> TaleSpireAsset:
-    newPosition, newRotation = source.offset.apply(position, rotation)
-    newRotation = round(newRotation / source.angleSnap) * source.angleSnap
-    return TaleSpireAsset(source.uuid, newPosition, newRotation)
+def _snap(value: float, snap: float) -> float:
+    return round(value / snap) * snap
 
 
 class TaleSpireSource(Source):
     uuid: Uuid
-    angleSnap: float = Field(default=15)
 
-    def generate_asset(self, position: Vec3, rotation: float) -> Any:
-        return _generate_talespire_asset(self, position, rotation)
+    class Config:
+        extra = "forbid"
+
+    def generate_asset(self, position: Vec3, rotation: float) -> TaleSpireAsset:
+        return TaleSpireAsset(self.uuid, *self.offset.apply(position, rotation))
 
 
 class TileSource(Source):
@@ -176,30 +218,63 @@ class TileSource(Source):
 
 class TaleSpireTileSource(TileSource):
     uuid: Uuid
-    angleSnap: float = Field(default=90)
 
-    def generate_asset(self, position: Vec3, rotation: float) -> Any:
-        return _generate_talespire_asset(self, position, rotation)
+    def generate_asset(self, position: Vec3, rotation: float) -> TaleSpireAsset:
+        return TaleSpireAsset(self.uuid, *self.offset.apply(position, rotation))
 
 
 class Prop(Named):
-    sources: "WeightedVarying[StackedSource]"
+    source: "WeightedVarying[StackedSource | TaleSpirePasteSource]"
 
 
 class StackedSource(Source):
     stack: List["WeightedVarying[TaleSpireSource]"]
 
-    def generate_asset(self, position: Vec3, rotation: float, stackIndex: int) -> Any:
-        variant = self.stack[stackIndex].choose()
-        if variant is not None:
-            return variant.value.generate_asset(position, rotation)
-        return None
-
-    def generate_assets(self, position: Vec3, rotation: float) -> List[Any]:
+    def generate_asset(self, position: Vec3, rotation: float) -> List[TaleSpireAsset]:
         newPosition, newRotation = self.offset.apply(position, rotation)
         assets = []
         for i in range(len(self.stack)):
-            asset = self.generate_asset(newPosition, newRotation, i)
-            if asset is not None:
+            variant = self.stack[i].choose()
+            if variant is not None:
+                asset = variant.value.generate_asset(Vec3.Zero(), newRotation)
+                asset.position = newPosition + _offset_rotate(asset.position, newRotation)
                 assets.append(asset)
         return assets
+
+
+def _offset_rotate(position: Vec3, rotation: float) -> Vec3:
+    """Rotates `position` around (0, 0) by `rotation` degrees, counter-clockwise."""
+    return Vec3(*Vec2(position.x, position.y).rotate(deg2rad(rotation)), position.z)
+
+
+class TaleSpirePasteSource(Source):
+    data: str
+
+    def generate_asset(self, position: Vec3, rotation: float) -> List[TaleSpireAsset]:
+        slab = sf.Slab.model_validate(sf.decode(self.data, quiet=True))
+
+        # Assume the paste is roughly symmetrical
+        xMin, yMin, xMax, yMax = inf, inf, -inf, -inf
+        for assetData in slab.asset_data:
+            for assetTransform in assetData.instances:
+                if assetTransform.x < xMin:
+                    xMin = assetTransform.x
+                elif assetTransform.x > xMax:
+                    xMax = assetTransform.x
+                if assetTransform.y < yMin:
+                    yMin = assetTransform.y
+                elif assetTransform.y > yMax:
+                    yMax = assetTransform.y
+        center = Vec3((xMin + xMax) * -0.5, (yMin + yMax) * -0.5, 0) * 0.01
+
+        # Center and rotate all assets positions around the center
+        newPosition, newRotation = self.offset.apply(position, rotation)
+        return [
+            TaleSpireAsset(
+                a.uuid,
+                newPosition + _offset_rotate(t.position * 0.01 + center, -newRotation),
+                newRotation + t.degree,
+            )
+            for a in slab.asset_data
+            for t in a.instances
+        ]

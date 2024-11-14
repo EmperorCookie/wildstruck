@@ -3,6 +3,8 @@ from math import ceil
 import random
 from typing import Any, Callable, List, MutableMapping, Tuple, TypeVar
 
+from .config._rendererConfig import RandomMethod
+
 
 from .config import RendererConfig
 from ._taleSpireSlab import TaleSpireSlab
@@ -24,7 +26,7 @@ class Renderer:
         boardData: BoardData,
         maxHeight: int = 64,
         colorMapName: None | str = None,
-        seed: int | str = 9001,
+        seed: int | str | None = None,
     ) -> TaleSpireSlab:
         if colorMapName is not None:
             self.config.activeBiomeMap = self.config.find_by_name(
@@ -43,7 +45,7 @@ class Renderer:
         x: int,
         y: int,
         maxHeight: int = 64,
-        seed: int | str = 9001,
+        seed: int | str | None = None,
     ) -> List[Any]:
 
         assets = []
@@ -53,7 +55,8 @@ class Renderer:
             return assets
 
         # A set seed must be used for the entire cell process for repeatability
-        random.seed(f"{seed}:{x},{y}")
+        if seed is not None:
+            random.seed(f"{seed}:{x},{y}")
 
         color, alpha = boardData.color_alpha(x, y)
         biome = self.config.find_by_name(
@@ -82,7 +85,7 @@ class Renderer:
                 or not all(((c == color and h == z) for c, h in data))
             ):
                 tileSize = 1
-        tileSourceVariant = tile.sources.choose(lambda t: (t.value.size == tileSize))
+        tileSourceVariant = tile.source.choose(lambda t: (t.value.size == tileSize))
         if tileSourceVariant is not None:
             tileSource = tileSourceVariant.value
 
@@ -118,12 +121,12 @@ class Renderer:
             for tx in range(tileSize):
 
                 for ci, clutter in enumerate(biomeTile.clutter):
-                    if clutter.randomMethod == "true":
+                    if clutter.randomMethod == RandomMethod.TRUE:
                         # Reduced chance to spawn in true random due to the added dimension
                         if random.random() >= pow(clutter.coverage, 2):
                             continue
 
-                    elif clutter.randomMethod == "jitter":
+                    elif clutter.randomMethod == RandomMethod.JITTER:
                         cx, cy = x + tx, y + ty
                         clutterPlacementKey = f"{biome.name}:{tile.name}:{ci}"
                         clutterPlacement = _get_factory(
@@ -144,13 +147,13 @@ class Renderer:
                         continue
                     propVariant = self.config.find_by_name(
                         propRef.name, self.config.props
-                    ).sources.choose()
+                    ).source.choose()
                     if propVariant is None:
                         continue
                     prop = propVariant.value
 
                     # Centered x/y, at the top of the tile
-                    propAssets = prop.generate_assets(
+                    propAssets = prop.generate_asset(
                         Vec3(x + tx + 0.5, y + ty + 0.5, z + tileSource.thickness), 0
                     )
                     assets.extend(propAssets)
