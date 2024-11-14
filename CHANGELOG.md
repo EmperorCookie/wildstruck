@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/EmperorCookie/wildstruck/compare/v3.0.0...v3.0.1) (2024-11-14)
+
+
+### Bug Fixes
+
+* Removed unnecessary dependency that was causing an increase in file size ([a5bbcb7](https://github.com/EmperorCookie/wildstruck/commit/a5bbcb7142e9838e82f1554eb38a2ca34842e390))
+
 ## [3.0.0](https://github.com/EmperorCookie/wildstruck/compare/v2.0.3...v3.0.0) (2024-11-14)
 
 
