@@ -472,7 +472,7 @@
                             "clutter": [
                                 {
                                     "coverage": 1,
-                                                                        "props": {
+                                    "props": {
                                         "variants": [
                                             {
                                                 "weight": 1,
@@ -985,9 +985,9 @@
                             "uuid": "bdf12fe7-8fa6-4474-878e-7e5847a34407",
                             "size": 1,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -997,9 +997,9 @@
                             "uuid": "dc860f1a-ebeb-491d-a75d-8b87ce51a808",
                             "size": 1,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1009,9 +1009,9 @@
                             "uuid": "2a50b735-3621-4880-9e88-11a6fff656c2",
                             "size": 2,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1021,9 +1021,9 @@
                             "uuid": "5463a50a-4b72-48f4-af5e-ebe46b60e260",
                             "size": 2,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1033,9 +1033,9 @@
                             "uuid": "231d8abb-9fa5-4e49-92e1-bd38f0bcf9b5",
                             "size": 2,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1052,9 +1052,9 @@
                             "uuid": "853c67c9-178e-49b2-9b76-f7f80c0060a3",
                             "size": 1,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1064,9 +1064,9 @@
                             "uuid": "f4fbf14e-df4d-4442-9dc6-c230e83ca495",
                             "size": 2,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1083,9 +1083,9 @@
                             "uuid": "503f0799-b652-4d81-b202-d4473caecee4",
                             "size": 1,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1095,9 +1095,9 @@
                             "uuid": "126e3c30-8188-4bd0-9288-493ea00679c3",
                             "size": 2,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1114,9 +1114,9 @@
                             "uuid": "ad6c985c-8d8b-44f2-abd5-edc9de568d30",
                             "size": 1,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1126,9 +1126,9 @@
                             "uuid": "01c3a210-94fb-449f-8c47-993eda3e7126",
                             "size": 2,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1138,9 +1138,9 @@
                             "uuid": "3911d10d-142b-4f33-9fea-5d3a10c53781",
                             "size": 2,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1157,9 +1157,9 @@
                             "uuid": "9b13871f-e338-4525-b9be-37f8870509e8",
                             "size": 1,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1169,9 +1169,9 @@
                             "uuid": "4b31606e-f19b-4923-8aea-306826b7e13b",
                             "size": 2,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1188,9 +1188,9 @@
                             "uuid": "3723541f-4c2d-46df-9ed4-5dbafff1146f",
                             "size": 1,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1200,9 +1200,9 @@
                             "uuid": "4bfbdf17-8c93-48b2-adf8-f2ab39135e0b",
                             "size": 2,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1219,9 +1219,9 @@
                             "uuid": "3723541f-4c2d-46df-9ed4-5dbafff1146f",
                             "size": 1,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1231,9 +1231,9 @@
                             "uuid": "4bfbdf17-8c93-48b2-adf8-f2ab39135e0b",
                             "size": 2,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1243,9 +1243,9 @@
                             "uuid": "516b9eb3-97c6-4f5d-b54e-d9ead24e090d",
                             "size": 2,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1262,9 +1262,9 @@
                             "uuid": "ce6a2235-664f-43e8-a744-d5743623701d",
                             "size": 1,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1274,9 +1274,9 @@
                             "uuid": "ea5589dc-507a-4e0d-bf48-b097c8318a38",
                             "size": 1,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1286,9 +1286,9 @@
                             "uuid": "b83392b1-8833-43c9-a97f-2ac3df659e66",
                             "size": 2,
                             "thickness": 0.5,
-                                                        "offset": {
-                                                                "degMax": 360,
-"degSnap": 90,
+                            "offset": {
+                                "degMax": 360,
+                                "degSnap": 90,
                             },
                         },
                     },
@@ -1319,19 +1319,19 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "4de18886-e851-41db-a907-42bef532f1f5",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "46ad1cbe-0854-4a36-a238-adad7b408ceb",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "4de18886-e851-41db-a907-42bef532f1f5",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -1363,7 +1363,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "9634779e-6d8f-4101-b552-af178d551b5f",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -1395,7 +1395,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "2b7c37c4-8dff-4095-873e-592031892dec",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -1427,13 +1427,13 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "6b9e66b5-2b8c-4ccf-a4e0-53acb0d8a273",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "e7ad17da-7bd9-47d1-be33-46b0c1bc637f",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -1465,7 +1465,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "c04bb850-c0fb-4621-9980-53cb3935f72f",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -1498,13 +1498,13 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "6b9e66b5-2b8c-4ccf-a4e0-53acb0d8a273",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "e7ad17da-7bd9-47d1-be33-46b0c1bc637f",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -1522,7 +1522,7 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                                                "degMax": 360,
+                                "degMax": 360,
                             },
                             "stack": [
                                 {
@@ -1531,10 +1531,10 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "9c0c91cc-3445-43e4-8f5c-6c96b29a7e3d",
-                                                                                                "offset": {
-                                                                                                        "zMin": -0.45,
+                                                "offset": {
+                                                    "zMin": -0.45,
                                                     "zMax": -0.45,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -1568,8 +1568,8 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "18dae9f1-8935-440d-950c-e6e35eb679b6",
-                                                                                                "offset": {
-                                                                                                        "zMin": -0.4,
+                                                "offset": {
+                                                    "zMin": -0.4,
                                                     "zMax": -0.4,
                                                 },
                                             },
@@ -1603,10 +1603,10 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "18a14b3e-1713-4453-869d-4c41abd353e7",
-                                                                                                "offset": {
-                                                                                                        "zMin": -0.2,
+                                                "offset": {
+                                                    "zMin": -0.2,
                                                     "zMax": -0.2,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -1640,8 +1640,8 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "c4bb44f6-ecff-444d-a196-49eaa76f4aa7",
-                                                                                                "offset": {
-                                                                                                        "zMin": -2.3,
+                                                "offset": {
+                                                    "zMin": -2.3,
                                                     "zMax": -2.3,
                                                 },
                                             },
@@ -1650,8 +1650,8 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "3f5088fa-09eb-403c-a395-a131406f046f",
-                                                                                                "offset": {
-                                                                                                        "zMin": -1.9,
+                                                "offset": {
+                                                    "zMin": -1.9,
                                                     "zMax": -1.9,
                                                 },
                                             },
@@ -1660,8 +1660,8 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "899deb17-89db-4c21-96a5-3bc2ba603d68",
-                                                                                                "offset": {
-                                                                                                        "zMin": -1.7,
+                                                "offset": {
+                                                    "zMin": -1.7,
                                                     "zMax": -1.7,
                                                 },
                                             },
@@ -1697,8 +1697,8 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "451e9727-bc73-462c-8c46-512687e6e170",
-                                                                                                "offset": {
-                                                                                                        "zMin": -1,
+                                                "offset": {
+                                                    "zMin": -1,
                                                     "zMax": -1,
                                                 },
                                             },
@@ -1734,8 +1734,8 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "7c29ce52-5f82-4889-9579-3d6bd6c280a5",
-                                                                                                "offset": {
-                                                                                                        "zMin": -1,
+                                                "offset": {
+                                                    "zMin": -1,
                                                     "zMax": -1,
                                                 },
                                             },
@@ -1770,7 +1770,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "31f47e65-9b70-4701-907b-db49e891fe3b",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -1802,7 +1802,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "770877ea-478f-424d-b50b-e02f52928d67",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -1833,7 +1833,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "6ba81f8e-9a9c-4745-990f-2cb27bb29cfc",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -1865,7 +1865,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "ecb4cd7d-f59f-4763-b930-64922a77ad82",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -1897,7 +1897,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "152ef8ef-5575-43e8-b1e6-fc02943c41d9",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -1929,7 +1929,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "39c41cb8-bf5a-4b7b-8268-09de48bcef92",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -1961,7 +1961,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "923bc5e3-a845-403f-93dd-035dbd276279",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -1992,13 +1992,13 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "f32d3808-8956-4123-b359-11d68f972fc0",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "2f38f8c4-796a-4be8-a507-ebf761baa4a6",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2030,19 +2030,19 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "0424e451-fd2b-428f-8daf-f01d3ccb2d35",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "3dab9ecb-f25d-43ed-aec1-719d3e5a8928",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "e983e4df-b10c-44ce-9193-6e944b124e00",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2074,13 +2074,13 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "603f6c03-950c-4e47-9c11-8c4b99592d7b",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "d33779cc-60bb-4454-96e4-eedab20b9c51",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2112,13 +2112,13 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "70b365de-4c29-4b1c-8e05-b48a8b3bd6fa",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 0.5,
                                             "value": {
                                                 "uuid": "6f1904bf-6a03-4c3a-a710-2722d23d6397",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2150,13 +2150,13 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "713a3242-e487-416c-b0e7-fcbcc9a43bc4",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 0.5,
                                             "value": {
                                                 "uuid": "912dcc08-4b39-423e-b128-5db0d1697765",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2188,13 +2188,13 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "67fe3119-d1aa-4bd7-98ca-bafad8f553da",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 0.5,
                                             "value": {
                                                 "uuid": "c5c65fd7-190d-4b9d-8c57-b7f9a2378ee5",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2226,7 +2226,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "2e255c74-6c6a-463d-a2a2-d8d97c327bfe",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2258,10 +2258,10 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "6665514a-cf77-4cab-ad3c-457a924a68d9",
-                                                                                                "offset": {
-                                                                                                        "zMin": -0.7,
+                                                "offset": {
+                                                    "zMin": -0.7,
                                                     "zMax": -0.7,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -2294,7 +2294,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "3ef32c7a-ddab-41c1-aac4-4b59abad193e",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2326,7 +2326,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "587da238-dda5-4fa1-b816-b41ac4dfe098",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2358,13 +2358,13 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "5d773e2c-ca2f-4c44-88d0-f9b4a7afaf5a",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "b6652d9a-09ac-4dd0-8d6f-32e27da28083",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2396,7 +2396,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "31a706bc-f39a-427b-b66d-80f7d52e80e2",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2428,13 +2428,13 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "58c490aa-ccd3-4008-87f3-13935b8a4f1c",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "a40f8e11-9143-45b6-b81d-2d78b81b917d",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2466,19 +2466,19 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "6d5f9341-398c-4ae4-847b-2a59f88bcb4e",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "d2bb65f1-2aab-46a1-b37c-def32a0ee116",
-                                                                                            },
+                                            },
                                         },
                                         {
                                             "weight": 0.25,
                                             "value": {
                                                 "uuid": "d1376c81-4b7e-4fe8-b4a1-20b3379caed0",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2510,7 +2510,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "c3aa7f07-217c-4f99-81c6-6137637692c7",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2542,7 +2542,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "5b6166d1-98c7-46d3-83e6-040ad6231621",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2560,7 +2560,7 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                                                "zMin": -0.5,
+                                "zMin": -0.5,
                                 "zMax": 0.5,
                                 "degMax": 360,
                             },
@@ -2571,8 +2571,8 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "28b95682-24d4-48c1-ae40-c5f02404c9b1",
-                                                                                                "offset": {
-                                                                                                        "zMin": -1.75,
+                                                "offset": {
+                                                    "zMin": -1.75,
                                                     "zMax": -1.75,
                                                 },
                                             },
@@ -2597,7 +2597,7 @@
                                 "xMax": 0.25,
                                 "yMin": -0.25,
                                 "yMax": 0.25,
-                                                                "degMax": 360,
+                                "degMax": 360,
                             },
                             "stack": [
                                 {
@@ -2606,7 +2606,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "28b95682-24d4-48c1-ae40-c5f02404c9b1",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2628,7 +2628,7 @@
                                 "xMax": 0.25,
                                 "yMin": -0.25,
                                 "yMax": 0.25,
-                                                                "degMax": 360,
+                                "degMax": 360,
                             },
                             "stack": [
                                 {
@@ -2637,7 +2637,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "afc09e2f-3673-4f91-b8b1-5b9df1537da6",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2659,7 +2659,7 @@
                                 "xMax": 0.25,
                                 "yMin": -0.25,
                                 "yMax": 0.25,
-                                                                "degMax": 360,
+                                "degMax": 360,
                             },
                             "stack": [
                                 {
@@ -2668,7 +2668,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "ecac8c32-c044-4e97-8d8f-157a83968956",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2690,7 +2690,7 @@
                                 "xMax": 0.25,
                                 "yMin": -0.25,
                                 "yMax": 0.25,
-                                                                "degMax": 360,
+                                "degMax": 360,
                             },
                             "stack": [
                                 {
@@ -2699,7 +2699,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "431d6291-4b36-4c52-89da-db337a0c6073",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2721,7 +2721,7 @@
                                 "xMax": 0.25,
                                 "yMin": -0.25,
                                 "yMax": 0.25,
-                                                                "degMax": 360,
+                                "degMax": 360,
                             },
                             "stack": [
                                 {
@@ -2730,7 +2730,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "6a7b1080-8aa4-4725-a2c7-8c3612f14d81",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2740,10 +2740,10 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "f73916c8-23b7-4bc7-bd19-869bc701de01",
-                                                                                                "offset": {
-                                                                                                        "zMin": 2,
+                                                "offset": {
+                                                    "zMin": 2,
                                                     "zMax": 2,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -2754,30 +2754,30 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "c0a9dd10-96b7-46fe-8ff3-9d46184f106f",
-                                                                                                "offset": {
-                                                                                                        "zMin": 3,
+                                                "offset": {
+                                                    "zMin": 3,
                                                     "zMax": 3,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "143c029c-34d6-4821-a5d3-76437114b7e0",
-                                                                                                "offset": {
-                                                                                                        "zMin": 3,
+                                                "offset": {
+                                                    "zMin": 3,
                                                     "zMax": 3,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "e2ed469f-6bce-4da0-823a-76dc049d8cbf",
-                                                                                                "offset": {
-                                                                                                        "zMin": 3,
+                                                "offset": {
+                                                    "zMin": 3,
                                                     "zMax": 3,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -2789,7 +2789,7 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                                                "degMax": 360,
+                                "degMax": 360,
                             },
                             "stack": [
                                 {
@@ -2798,20 +2798,6 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "6a7b1080-8aa4-4725-a2c7-8c3612f14d81",
-                                                                                            },
-                                        },
-                                    ],
-                                },
-                                {
-                                    "variants": [
-                                        {
-                                            "weight": 1,
-                                            "value": {
-                                                "uuid": "f73916c8-23b7-4bc7-bd19-869bc701de01",
-                                                                                                "offset": {
-                                                                                                        "zMin": 2,
-                                                    "zMax": 2,
-                                                                                                    },
                                             },
                                         },
                                     ],
@@ -2822,10 +2808,24 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "f73916c8-23b7-4bc7-bd19-869bc701de01",
-                                                                                                "offset": {
-                                                                                                        "zMin": 3,
+                                                "offset": {
+                                                    "zMin": 2,
+                                                    "zMax": 2,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "f73916c8-23b7-4bc7-bd19-869bc701de01",
+                                                "offset": {
+                                                    "zMin": 3,
                                                     "zMax": 3,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -2836,30 +2836,30 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "c0a9dd10-96b7-46fe-8ff3-9d46184f106f",
-                                                                                                "offset": {
-                                                                                                        "zMin": 4,
+                                                "offset": {
+                                                    "zMin": 4,
                                                     "zMax": 4,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "143c029c-34d6-4821-a5d3-76437114b7e0",
-                                                                                                "offset": {
-                                                                                                        "zMin": 4,
+                                                "offset": {
+                                                    "zMin": 4,
                                                     "zMax": 4,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "e2ed469f-6bce-4da0-823a-76dc049d8cbf",
-                                                                                                "offset": {
-                                                                                                        "zMin": 4,
+                                                "offset": {
+                                                    "zMin": 4,
                                                     "zMax": 4,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -2871,7 +2871,7 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                                                "degMax": 360,
+                                "degMax": 360,
                             },
                             "stack": [
                                 {
@@ -2880,7 +2880,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "6a7b1080-8aa4-4725-a2c7-8c3612f14d81",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2890,10 +2890,10 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "f73916c8-23b7-4bc7-bd19-869bc701de01",
-                                                                                                "offset": {
-                                                                                                        "zMin": 2,
+                                                "offset": {
+                                                    "zMin": 2,
                                                     "zMax": 2,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -2904,10 +2904,10 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "f73916c8-23b7-4bc7-bd19-869bc701de01",
-                                                                                                "offset": {
-                                                                                                        "zMin": 3,
+                                                "offset": {
+                                                    "zMin": 3,
                                                     "zMax": 3,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -2918,10 +2918,10 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "f73916c8-23b7-4bc7-bd19-869bc701de01",
-                                                                                                "offset": {
-                                                                                                        "zMin": 4,
+                                                "offset": {
+                                                    "zMin": 4,
                                                     "zMax": 4,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -2932,30 +2932,30 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "c0a9dd10-96b7-46fe-8ff3-9d46184f106f",
-                                                                                                "offset": {
-                                                                                                        "zMin": 5,
+                                                "offset": {
+                                                    "zMin": 5,
                                                     "zMax": 5,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "143c029c-34d6-4821-a5d3-76437114b7e0",
-                                                                                                "offset": {
-                                                                                                        "zMin": 5,
+                                                "offset": {
+                                                    "zMin": 5,
                                                     "zMax": 5,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "e2ed469f-6bce-4da0-823a-76dc049d8cbf",
-                                                                                                "offset": {
-                                                                                                        "zMin": 5,
+                                                "offset": {
+                                                    "zMin": 5,
                                                     "zMax": 5,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -2978,7 +2978,7 @@
                                 "xMax": 0.25,
                                 "yMin": -0.25,
                                 "yMax": 0.25,
-                                                                "degMax": 360,
+                                "degMax": 360,
                             },
                             "stack": [
                                 {
@@ -2987,7 +2987,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "e5a66bdc-37cc-4317-b4c6-a1b88c3392e9",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -2997,20 +2997,20 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "4b4ffc04-4534-4924-84d4-9f3b9e438d81",
-                                                                                                "offset": {
-                                                                                                        "zMin": 0.5,
+                                                "offset": {
+                                                    "zMin": 0.5,
                                                     "zMax": 0.5,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "ee63836f-b03a-428b-8fb9-9848595124a4",
-                                                                                                "offset": {
-                                                                                                        "zMin": 0.5,
+                                                "offset": {
+                                                    "zMin": 0.5,
                                                     "zMax": 0.5,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -3021,10 +3021,10 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "3f883945-6d03-4a4b-a1bb-511213c3b9da",
-                                                                                                "offset": {
-                                                                                                        "zMin": 1.25,
+                                                "offset": {
+                                                    "zMin": 1.25,
                                                     "zMax": 1.75,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -3040,7 +3040,7 @@
                                 "xMax": 0.25,
                                 "yMin": -0.25,
                                 "yMax": 0.25,
-                                                                "degMax": 360,
+                                "degMax": 360,
                             },
                             "stack": [
                                 {
@@ -3049,20 +3049,6 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "e5a66bdc-37cc-4317-b4c6-a1b88c3392e9",
-                                                                                            },
-                                        },
-                                    ],
-                                },
-                                {
-                                    "variants": [
-                                        {
-                                            "weight": 1,
-                                            "value": {
-                                                "uuid": "3f883945-6d03-4a4b-a1bb-511213c3b9da",
-                                                                                                "offset": {
-                                                                                                        "zMin": 1.25,
-                                                    "zMax": 1.25,
-                                                                                                    },
                                             },
                                         },
                                     ],
@@ -3073,10 +3059,24 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "3f883945-6d03-4a4b-a1bb-511213c3b9da",
-                                                                                                "offset": {
-                                                                                                        "zMin": 2,
+                                                "offset": {
+                                                    "zMin": 1.25,
+                                                    "zMax": 1.25,
+                                                },
+                                            },
+                                        },
+                                    ],
+                                },
+                                {
+                                    "variants": [
+                                        {
+                                            "weight": 1,
+                                            "value": {
+                                                "uuid": "3f883945-6d03-4a4b-a1bb-511213c3b9da",
+                                                "offset": {
+                                                    "zMin": 2,
                                                     "zMax": 2.5,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -3092,7 +3092,7 @@
                                 "xMax": 0.25,
                                 "yMin": -0.25,
                                 "yMax": 0.25,
-                                                                "degMax": 360,
+                                "degMax": 360,
                             },
                             "stack": [
                                 {
@@ -3101,7 +3101,7 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "e5a66bdc-37cc-4317-b4c6-a1b88c3392e9",
-                                                                                            },
+                                            },
                                         },
                                     ],
                                 },
@@ -3111,20 +3111,20 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "4b4ffc04-4534-4924-84d4-9f3b9e438d81",
-                                                                                                "offset": {
-                                                                                                        "zMin": 1.25,
+                                                "offset": {
+                                                    "zMin": 1.25,
                                                     "zMax": 1.25,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                         {
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "ee63836f-b03a-428b-8fb9-9848595124a4",
-                                                                                                "offset": {
-                                                                                                        "zMin": 1.25,
+                                                "offset": {
+                                                    "zMin": 1.25,
                                                     "zMax": 1.25,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
@@ -3135,15 +3135,36 @@
                                             "weight": 1,
                                             "value": {
                                                 "uuid": "3f883945-6d03-4a4b-a1bb-511213c3b9da",
-                                                                                                "offset": {
-                                                                                                        "zMin": 2,
+                                                "offset": {
+                                                    "zMin": 2,
                                                     "zMax": 2.5,
-                                                                                                    },
+                                                },
                                             },
                                         },
                                     ],
                                 },
                             ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "treeSavanna",
+            "source": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "offset": {
+                                "xMin": -0.25,
+                                "xMax": 0.25,
+                                "yMin": -0.25,
+                                "yMax": 0.25,
+                                "degMax": 360,
+                                "degSnap": 15,
+                            },
+                            "data": "H4sIAAAAAAAAChWRS2hTURCGZ86j5KZpmkTbgoJE7FZzF6GIq3GlQtELPotZBAUfUPGCKyGlV4wLceFVC1KhGioICtYUK4h0MS66kVKiC9ciLhRBIqL42Pjf1cfMnHP++f+z8XfjrSFLRC+OLC60ik/33au/48vt5aND6NXu67NLE7cOvVw+ufD98MwjRi+3e+ePY9d37H0+VX5/825N96B3jsjGowkd5zlTGiPzmNY5qghtZ7WdSsK3qW/ikvp5blgdILtEDRtx4mq41w3In8a96mBiL9CkCQPxfzBPArU1Tk1UIrNGdZME4r5Aq4fFflHfKt57Qys23SROeAU6aho0bhPUF+mz6YyJ25UR/VmwWxEOedWEZXHjYDwqnHDLpOABsDOifhtY3SKuCPY2q/lJLSNl4RnqcwK9K6Qc49xVMNN9AHZGhNdAqRD9wz7hsPA0t201EP5NbdvMq18HPxhxBzmyJfhYBOO8modgiu2/UYQvUD8HxizuE9j0ajzm/UHhs/AVgktgs6ie4CfLYxLs4Z0zYJgTngf7BfWrYDqs/jx8ypCa/fAj2P9E5rcg7lTmN6fmScai8B347OXUd5FzOpD5q5vYibsBYn8zldXQb2d1oF6zOi9uK9cN4Z0CGGH+FX3o+Y/IK4L+K+TSGyY/keVWVHcNrEJ/NsuvKO41iHOO6D/b/XuAiAIAAA==",
                         },
                     },
                 ],

@@ -9,6 +9,7 @@ from uuid import UUID as Uuid
 from pydantic import BaseModel, Field, StringConstraints
 
 from .._taleSpireAsset import TaleSpireAsset
+from ... import _slabelfish as sf
 from ..._vec import Vec2, Vec3
 
 
@@ -223,7 +224,7 @@ class TaleSpireTileSource(TileSource):
 
 
 class Prop(Named):
-    source: "WeightedVarying[StackedSource]"
+    source: "WeightedVarying[StackedSource | TaleSpirePasteSource]"
 
 
 class StackedSource(Source):
@@ -244,3 +245,36 @@ class StackedSource(Source):
 def _offset_rotate(position: Vec3, rotation: float) -> Vec3:
     """Rotates `position` around (0, 0) by `rotation` degrees, counter-clockwise."""
     return Vec3(*Vec2(position.x, position.y).rotate(deg2rad(rotation)), position.z)
+
+
+class TaleSpirePasteSource(Source):
+    data: str
+
+    def generate_asset(self, position: Vec3, rotation: float) -> List[TaleSpireAsset]:
+        slab = sf.Slab.model_validate(sf.decode(self.data, quiet=True))
+
+        # Assume the paste is roughly symmetrical
+        xMin, yMin, xMax, yMax = inf, inf, -inf, -inf
+        for assetData in slab.asset_data:
+            for assetTransform in assetData.instances:
+                if assetTransform.x < xMin:
+                    xMin = assetTransform.x
+                elif assetTransform.x > xMax:
+                    xMax = assetTransform.x
+                if assetTransform.y < yMin:
+                    yMin = assetTransform.y
+                elif assetTransform.y > yMax:
+                    yMax = assetTransform.y
+        center = Vec3((xMin + xMax) * -0.5, (yMin + yMax) * -0.5, 0) * 0.01
+
+        # Center and rotate all assets positions around the center
+        newPosition, newRotation = self.offset.apply(position, rotation)
+        return [
+            TaleSpireAsset(
+                a.uuid,
+                newPosition + _offset_rotate(t.position * 0.01 + center, -newRotation),
+                newRotation + t.degree,
+            )
+            for a in slab.asset_data
+            for t in a.instances
+        ]
