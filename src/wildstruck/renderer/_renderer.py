@@ -26,7 +26,7 @@ class Renderer:
         boardData: BoardData,
         maxHeight: int = 64,
         colorMapName: None | str = None,
-        seed: int | str = 9001,
+        seed: int | str | None = None,
     ) -> TaleSpireSlab:
         if colorMapName is not None:
             self.config.activeBiomeMap = self.config.find_by_name(
@@ -45,7 +45,7 @@ class Renderer:
         x: int,
         y: int,
         maxHeight: int = 64,
-        seed: int | str = 9001,
+        seed: int | str | None = None,
     ) -> List[Any]:
 
         assets = []
@@ -55,7 +55,8 @@ class Renderer:
             return assets
 
         # A set seed must be used for the entire cell process for repeatability
-        random.seed(f"{seed}:{x},{y}")
+        if seed is not None:
+            random.seed(f"{seed}:{x},{y}")
 
         color, alpha = boardData.color_alpha(x, y)
         biome = self.config.find_by_name(

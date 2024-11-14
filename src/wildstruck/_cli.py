@@ -10,7 +10,7 @@ def wildstruck_render(
     heightmapPath: Path | None = None,
     biomeMap: str | None = None,
     maxHeight: int = 64,
-    seed: int | str = 9001,
+    seed: int | str | None = None,
     chunkSize: int = 32,
 ) -> int:
     """
