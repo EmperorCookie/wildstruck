@@ -139,7 +139,7 @@ class Tile(Named):
 
 
 class Source(BaseModel):
-    offset: "RandomTransform"
+    offset: "RandomTransform" = Field(default_factory=lambda: RandomTransform())
 
     class Config:
         extra = "forbid"
@@ -150,17 +150,17 @@ class Source(BaseModel):
 
 
 class RandomTransform(BaseModel):
-    xMin: float
-    xMax: float
+    xMin: float = Field(default=0)
+    xMax: float = Field(default=0)
     xSnap: float | None = Field(default=None)
-    yMin: float
-    yMax: float
+    yMin: float = Field(default=0)
+    yMax: float = Field(default=0)
     ySnap: float | None = Field(default=None)
-    zMin: float
-    zMax: float
+    zMin: float = Field(default=0)
+    zMax: float = Field(default=0)
     zSnap: float | None = Field(default=None)
-    degMin: float
-    degMax: float
+    degMin: float = Field(default=0)
+    degMax: float = Field(default=0)
     degSnap: float | None = Field(default=None)
 
     class Config:
