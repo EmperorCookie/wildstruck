@@ -123,12 +123,16 @@ class Source(BaseModel):
 class RandomTransform(BaseModel):
     xMin: float
     xMax: float
+    xSnap: float | None = Field(default=None)
     yMin: float
     yMax: float
+    ySnap: float | None = Field(default=None)
     zMin: float
     zMax: float
+    zSnap: float | None = Field(default=None)
     degMin: float
     degMax: float
+    degSnap: float | None = Field(default=None)
 
     @property
     def vecMin(self) -> Vec3:
@@ -146,22 +150,29 @@ class RandomTransform(BaseModel):
     def degRange(self) -> float:
         return self.degMax - self.degMin
 
-    def apply(
-        self, position: Vec3, rotation: float, snap: float | None = None
-    ) -> Tuple[Vec3, float]:
+    def apply(self, position: Vec3, rotation: float) -> Tuple[Vec3, float]:
         outPos = position + self.vecMin + Vec3.Random() * self.vecRange
+        outPos = Vec3(
+            *(
+                (outPos[i] if snap is None else _snap(outPos[i], snap))  # type: ignore # Linter bug
+                for i, snap in enumerate((self.xSnap, self.ySnap, self.zSnap))
+            )
+        )
         outRot = rotation + self.degMin + random.random() * self.degRange
-        if snap is not None:
-            outRot = round(outRot / snap) * snap
+        if self.degSnap is not None:
+            outRot = _snap(outRot, self.degSnap)
         return outPos, outRot
+
+
+def _snap(value: float, snap: float) -> float:
+    return round(value / snap) * snap
 
 
 class TaleSpireSource(Source):
     uuid: Uuid
-    angleSnap: float = Field(default=15)
 
     def generate_asset(self, position: Vec3, rotation: float) -> TaleSpireAsset:
-        return TaleSpireAsset(self.uuid, *self.offset.apply(position, rotation, self.angleSnap))
+        return TaleSpireAsset(self.uuid, *self.offset.apply(position, rotation))
 
 
 class TileSource(Source):
@@ -171,10 +182,9 @@ class TileSource(Source):
 
 class TaleSpireTileSource(TileSource):
     uuid: Uuid
-    angleSnap: float = Field(default=90)
 
     def generate_asset(self, position: Vec3, rotation: float) -> TaleSpireAsset:
-        return TaleSpireAsset(self.uuid, *self.offset.apply(position, rotation, self.angleSnap))
+        return TaleSpireAsset(self.uuid, *self.offset.apply(position, rotation))
 
 
 class Prop(Named):
