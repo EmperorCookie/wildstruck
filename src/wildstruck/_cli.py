@@ -77,6 +77,21 @@ def wildstruck_schema() -> int:
     return 0
 
 
+def wildstruck_validate(configPath: Path) -> int:
+    """
+    Checks the validity of a config file.
+
+    Positional:
+        configPath:
+            Path to the json config file. Supports JSON5.
+    """
+    from ._helper import load_renderer_config
+
+    config = load_renderer_config(configPath)
+    print("All good.")
+    return 0
+
+
 def wildstruck_version() -> int:
     """
     Print the version and exits.
@@ -109,6 +124,7 @@ cli = Subcommand(
             autoAliases=True,
         ),
         schema=Cli(wildstruck_schema),
+        validate=Cli(wildstruck_validate),
         version=Cli(wildstruck_version),
     ),
     commandHelp=dict(
@@ -117,6 +133,7 @@ cli = Subcommand(
             "Outputs the jsonschema for the config file and exits. Use in conjunction with"
             " jsonschemavalidator.net to make changes to the config file."
         ),
+        validate="Checks the validity of a config file.",
         version="Print the version and exits.",
     ),
 )
