@@ -1392,10 +1392,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.25,
                                 "degMax": 360,
                             },
@@ -1436,10 +1436,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.25,
                                 "degMax": 360,
                             },
@@ -1468,10 +1468,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.1,
                                 "degMax": 360,
                             },
@@ -1500,10 +1500,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.15,
                                 "degMax": 360,
                             },
@@ -1538,10 +1538,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.15,
                                 "degMax": 360,
                             },
@@ -1712,10 +1712,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.1,
                                 "zMax": 0.1,
                                 "degMax": 360,
@@ -1769,10 +1769,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.1,
                                 "zMax": 0.1,
                                 "degMax": 360,
@@ -1806,10 +1806,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.1,
                                 "zMax": 0.1,
                                 "degMax": 360,
@@ -1907,10 +1907,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "degMax": 360,
                             },
                             "stack": [
@@ -1938,10 +1938,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.1,
                                 "degMax": 360,
                             },
@@ -1970,10 +1970,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.1,
                                 "degMax": 360,
                             },
@@ -2002,10 +2002,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.15,
                                 "degMax": 360,
                             },
@@ -2034,10 +2034,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.1,
                                 "degMax": 360,
                             },
@@ -2066,10 +2066,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "degMax": 360,
                             },
                             "stack": [
@@ -2103,10 +2103,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.1,
                                 "degMax": 360,
                             },
@@ -2147,10 +2147,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.1,
                                 "degMax": 360,
                             },
@@ -2185,10 +2185,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.1,
                                 "degMax": 360,
                             },
@@ -2223,10 +2223,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.1,
                                 "degMax": 360,
                             },
@@ -2261,10 +2261,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.1,
                                 "degMax": 360,
                             },
@@ -2299,10 +2299,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.25,
                                 "degMax": 360,
                             },
@@ -2331,10 +2331,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.05,
                                 "degMax": 360,
                             },
@@ -2367,10 +2367,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.25,
                                 "degMax": 360,
                             },
@@ -2399,10 +2399,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.1,
                                 "degMax": 360,
                             },
@@ -2431,10 +2431,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.25,
                                 "degMax": 360,
                             },
@@ -2469,10 +2469,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.2,
                                 "degMax": 360,
                             },
@@ -2501,10 +2501,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.25,
                                 "degMax": 360,
                             },
@@ -2539,10 +2539,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.1,
                                 "degMax": 360,
                             },
@@ -2583,10 +2583,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.25,
                                 "degMax": 360,
                             },
@@ -2615,10 +2615,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.25,
                                 "degMax": 360,
                             },
@@ -2647,6 +2647,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.5,
                                 "zMax": 0.5,
                                 "degMax": 360,
@@ -2680,10 +2684,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "degMax": 360,
                             },
                             "stack": [
@@ -2711,10 +2715,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "degMax": 360,
                             },
                             "stack": [
@@ -2742,10 +2746,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "degMax": 360,
                             },
                             "stack": [
@@ -2773,10 +2777,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "degMax": 360,
                             },
                             "stack": [
@@ -2804,10 +2808,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "degMax": 360,
                             },
                             "stack": [
@@ -2876,6 +2880,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "degMax": 360,
                             },
                             "stack": [
@@ -2958,6 +2966,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "degMax": 360,
                             },
                             "stack": [
@@ -3061,10 +3073,10 @@
                         "weight": 0.05,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "degMax": 360,
                             },
                             "stack": [
@@ -3123,10 +3135,10 @@
                         "weight": 0.05,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "degMax": 360,
                             },
                             "stack": [
@@ -3175,10 +3187,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "degMax": 360,
                             },
                             "stack": [
@@ -3244,10 +3256,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "degMax": 360,
                                 "degSnap": 15,
                             },
