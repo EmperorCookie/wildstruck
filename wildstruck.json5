@@ -21,7 +21,7 @@
                 "E0E080": "sand", // Done
                 "FFFF80": "beach", // Done
                 "608060": "shrubland", // Done
-                "A0C060": "savanna",
+                "A0C060": "savanna", // Done
                 "106010": "forestJungle", // Done
                 "906050": "crackedDirt", // Done
                 "808080": "cliff", // Done
@@ -133,6 +133,93 @@
                                             },
                                             {
                                                 "weight": 0.01,
+                                                "value": {
+                                                    "name": "rockLow",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            "name": "savanna",
+            "tiles": {
+                "variants": [
+                    {
+                        "weight": 1,
+                        "value": {
+                            "tileRef": {
+                                "name": "crackedDirt",
+                            },
+                            "clutter": [
+                                {
+                                    "coverage": 1,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "grass",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    "coverage": 0.2,
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "rockDesert",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.5,
+                                                "value": {
+                                                    "name": "pebbles",
+                                                },
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    "coverage": 0.1,
+                                    "randomMethod": "jitter",
+                                    "props": {
+                                        "variants": [
+                                            {
+                                                "weight": 1,
+                                                "value": {
+                                                    "name": "treeSavanna",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.05,
+                                                "value": {
+                                                    "name": "bushDead",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.02,
+                                                "value": {
+                                                    "name": "bushDeadBig",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.1,
+                                                "value": {
+                                                    "name": "bush",
+                                                },
+                                            },
+                                            {
+                                                "weight": 0.05,
                                                 "value": {
                                                     "name": "rockLow",
                                                 },
@@ -1483,10 +1570,10 @@
                         "weight": 1,
                         "value": {
                             "offset": {
-                                "xMin": -0.25,
-                                "xMax": 0.25,
-                                "yMin": -0.25,
-                                "yMax": 0.25,
+                                "xMin": -0.4,
+                                "xMax": 0.4,
+                                "yMin": -0.4,
+                                "yMax": 0.4,
                                 "zMin": -0.25,
                                 "zMax": -0.25,
                                 "degMax": 360,
